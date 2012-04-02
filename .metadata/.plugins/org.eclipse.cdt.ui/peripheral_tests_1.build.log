@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project peripheral_tests_1 ****
+
+make all 
+Building target: peripheral_tests_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_1/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"peripheral_tests_1.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xuartlite_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:\xilinx\13.4\ise_ds\edk\gnu\microblaze\nt\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: region microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl is full (peripheral_tests_1.elf section .stack)
+c:\xilinx\13.4\ise_ds\edk\gnu\microblaze\nt\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: region microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl is full (peripheral_tests_1.elf section .stack)
+collect2: ld returned 1 exit status
+make: *** [peripheral_tests_1.elf] Error 1

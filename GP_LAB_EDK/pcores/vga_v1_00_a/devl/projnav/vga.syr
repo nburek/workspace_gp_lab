@@ -1,0 +1,844 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: vga.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vga
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\workspace_gp_lab\GP_LAB_EDK\pcores\vga_v1_00_a\devl\projnav\ipcore_dir\videoMemory.v" into library work
+Parsing module <videoMemory>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "C:\workspace_gp_lab\GP_LAB_EDK\pcores\vga_v1_00_a\hdl\vhdl\user_logic.vhd" into library vga_v1_00_a
+Parsing entity <user_logic>.
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "C:\workspace_gp_lab\GP_LAB_EDK\pcores\vga_v1_00_a\hdl\vhdl\vga.vhd" into library vga_v1_00_a
+Parsing entity <vga>.
+Parsing architecture <IMP> of entity <vga>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <vga> (architecture <IMP>) with generics from library <vga_v1_00_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+INFO:HDLCompiler:679 - "C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\slave_attachment.vhd" Line 412. Case statement is complete. others clause is never selected
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <vga_v1_00_a>.
+WARNING:HDLCompiler:89 - "C:\workspace_gp_lab\GP_LAB_EDK\pcores\vga_v1_00_a\hdl\vhdl\user_logic.vhd" Line 179: <videomemory> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "C:\workspace_gp_lab\GP_LAB_EDK\pcores\vga_v1_00_a\hdl\vhdl\user_logic.vhd" Line 224: Assignment to pixelx ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vga>.
+    Related source file is "c:/workspace_gp_lab/gp_lab_edk/pcores/vga_v1_00_a/hdl/vhdl/vga.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "11111111111111111111111111111111"
+        C_HIGHADDR = "00000000000000000000000000000000"
+        C_FAMILY = "virtex6"
+        C_NUM_REG = 1
+        C_NUM_MEM = 1
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "c:/workspace_gp_lab/gp_lab_edk/pcores/vga_v1_00_a/hdl/vhdl/vga.vhd" line 243: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/workspace_gp_lab/gp_lab_edk/pcores/vga_v1_00_a/hdl/vhdl/vga.vhd" line 243: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/workspace_gp_lab/gp_lab_edk/pcores/vga_v1_00_a/hdl/vhdl/vga.vhd" line 243: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <vga> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "c:/xilinx/13.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_NUM_CE_ARRAY = (1)
+        C_FAMILY = "virtex6"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "c:/xilinx/13.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_NUM_CE_ARRAY = (1)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "c:/xilinx/13.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 336: Output port <CS_for_gaps> of the instance <I_DECODER> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <state>.
+    Found 2-bit register for signal <s_axi_rresp_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 2-bit register for signal <s_axi_bresp_i>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 4-bit register for signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <INCLUDE_DPHASE_TIMER.dpto_cnt[3]_GND_12_o_add_31_OUT> created at line 502.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "c:/xilinx/13.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 9
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_NUM_CE_ARRAY = (1)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Bus_RNW_reg>.
+    Found 1-bit register for signal <ce_out_i>.
+    Found 1-bit register for signal <cs_out_i>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "c:/workspace_gp_lab/gp_lab_edk/pcores/vga_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        Ha = 96
+        Hb = 144
+        Hc = 784
+        Hd = 800
+        Va = 2
+        Vb = 35
+        Vc = 515
+        Vd = 525
+        C_NUM_REG = 1
+        C_SLV_DWIDTH = 32
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <Bus2IP_Data<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_BE<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <pixel_clk>.
+    Found 1-bit register for signal <Hsync>.
+    Found 1-bit register for signal <Vsync>.
+    Found 10-bit register for signal <hCount>.
+    Found 9-bit register for signal <vCount>.
+    Found 3-bit register for signal <R>.
+    Found 3-bit register for signal <G>.
+    Found 2-bit register for signal <B>.
+    Found 17-bit register for signal <readAddress>.
+    Found 32-bit register for signal <slv_reg0>.
+    Found 3-bit register for signal <writeData>.
+    Found 17-bit register for signal <writeAddress>.
+    Found 2-bit register for signal <clk_counter>.
+    Found 2-bit adder for signal <clk_counter[1]_GND_14_o_add_0_OUT> created at line 219.
+    Found 9-bit adder for signal <vCount[8]_GND_14_o_mux_9_OUT> created at line 257.
+    Found 10-bit adder for signal <hCount[9]_GND_14_o_add_10_OUT> created at line 261.
+    Found 17-bit adder for signal <vCount[8]_GND_14_o_add_32_OUT> created at line 305.
+    Found 9x8-bit multiplier for signal <n0112> created at line 305.
+    Found 10-bit comparator lessequal for signal <n0003> created at line 238
+    Found 10-bit comparator lessequal for signal <n0005> created at line 238
+    Found 9-bit comparator lessequal for signal <n0009> created at line 244
+    Found 9-bit comparator lessequal for signal <n0011> created at line 244
+    Found 10-bit comparator lessequal for signal <n0022> created at line 264
+    Found 9-bit comparator lessequal for signal <n0024> created at line 264
+    Found 9-bit comparator greater for signal <vCount[8]_GND_14_o_LessThan_16_o> created at line 270
+    Found 10-bit comparator greater for signal <hCount[9]_GND_14_o_LessThan_17_o> created at line 270
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 101 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 23
+ 1-bit register                                        : 9
+ 10-bit register                                       : 1
+ 17-bit register                                       : 2
+ 2-bit register                                        : 4
+ 3-bit register                                        : 3
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 1
+ 10-bit comparator lessequal                           : 3
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 3
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 3
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/videoMemory.ngc>.
+Loading core <videoMemory> for timing and area information for instance <videoMem>.
+INFO:Xst:2261 - The FF/Latch <B_0> in Unit <USER_LOGIC_I> is equivalent to the following FF/Latch, which will be removed : <B_1> 
+INFO:Xst:2261 - The FF/Latch <clk_counter_1> in Unit <USER_LOGIC_I> is equivalent to the following FF/Latch, which will be removed : <pixel_clk> 
+WARNING:Xst:1710 - FF/Latch <slv_reg0_14> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_15> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_16> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_17> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_18> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_19> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_20> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_21> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_22> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_23> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_24> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_25> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_26> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_27> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_28> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_29> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_30> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_31> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_1> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_1> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_0> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_1> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_2> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_3> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_4> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_5> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_6> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_7> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_8> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_9> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_10> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_11> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_12> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_13> (without init value) has a constant value of 0 in block <USER_LOGIC_I>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <slave_attachment>.
+The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+Unit <slave_attachment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <user_logic>.
+The following registers are absorbed into counter <hCount>: 1 register on signal <hCount>.
+The following registers are absorbed into accumulator <vCount>: 1 register on signal <vCount>.
+The following registers are absorbed into counter <clk_counter>: 1 register on signal <clk_counter>.
+	Multiplier <Mmult_n0112> in block <user_logic> and adder/subtractor <Madd_vCount[8]_GND_14_o_add_32_OUT> in block <user_logic> are combined into a MAC<Maddsub_n0112>.
+	The following registers are also absorbed by the MAC: <readAddress> in block <user_logic>.
+Unit <user_logic> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 9x8-to-17-bit MAC                                     : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 3
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 9-bit up accumulator                                  : 1
+# Registers                                            : 105
+ Flip-Flops                                            : 105
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 1
+ 10-bit comparator lessequal                           : 3
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 3
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 3
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slv_reg0_31> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_30> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_29> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_28> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_27> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_26> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_25> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_24> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_23> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_22> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_21> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_20> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_19> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_18> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_17> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_16> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_15> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_14> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_13> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_12> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_11> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_10> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_9> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_8> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_7> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_6> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_5> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_4> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_3> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_2> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_1> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg0_0> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <B_0> in Unit <user_logic> is equivalent to the following FF/Latch, which will be removed : <B_1> 
+INFO:Xst:2261 - The FF/Latch <I_DECODER/ce_out_i_0> in Unit <slave_attachment> is equivalent to the following FF/Latch, which will be removed : <I_DECODER/cs_out_i_0> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 00
+ sm_read  | 01
+ sm_write | 10
+ sm_resp  | 11
+----------------------
+INFO:Xst:2261 - The FF/Latch <R_0> in Unit <user_logic> is equivalent to the following 2 FFs/Latches, which will be removed : <R_1> <R_2> 
+INFO:Xst:2261 - The FF/Latch <G_0> in Unit <user_logic> is equivalent to the following 2 FFs/Latches, which will be removed : <G_1> <G_2> 
+INFO:Xst:2261 - The FF/Latch <pixel_clk> in Unit <user_logic> is equivalent to the following FF/Latch, which will be removed : <clk_counter_1> 
+
+Optimizing unit <vga> ...
+
+Optimizing unit <slave_attachment> ...
+
+Optimizing unit <user_logic> ...
+WARNING:Xst:1293 - FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_5> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_4> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17> has a constant value of 0 in block <vga>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vga.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 127
+#      GND                         : 2
+#      INV                         : 4
+#      LUT1                        : 2
+#      LUT2                        : 10
+#      LUT3                        : 26
+#      LUT4                        : 12
+#      LUT5                        : 16
+#      LUT6                        : 31
+#      MUXCY                       : 9
+#      MUXF7                       : 3
+#      VCC                         : 2
+#      XORCY                       : 10
+# FlipFlops/Latches                : 62
+#      FD                          : 26
+#      FDE                         : 25
+#      FDR                         : 11
+# RAMS                             : 17
+#      RAMB16BWER                  : 15
+#      RAMB8BWER                   : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 77
+#      IBUF                        : 26
+#      OBUF                        : 51
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  18224     0%  
+ Number of Slice LUTs:                  101  out of   9112     1%  
+    Number used as Logic:               101  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    143
+   Number with an unused Flip Flop:      81  out of    143    56%  
+   Number with an unused LUT:            42  out of    143    29%  
+   Number of fully used LUT-FF pairs:    20  out of    143    13%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                         159
+ Number of bonded IOBs:                  79  out of    232    34%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               16  out of     32    50%  
+    Number using Block RAM only:         16
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+S_AXI_ACLK                         | BUFGP                  | 31    |
+USER_LOGIC_I/pixel_clk             | BUFG                   | 25    |
+clk                                | BUFGP                  | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.711ns (Maximum Frequency: 129.691MHz)
+   Minimum input arrival time before clock: 3.492ns
+   Maximum output required time after clock: 4.817ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 2.978ns (frequency: 335.818MHz)
+  Total number of paths / destination ports: 96 / 38
+-------------------------------------------------------------------------
+Delay:               2.978ns (Levels of Logic = 1)
+  Source:            AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
+  Destination:       USER_LOGIC_I/writeAddress_16 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg to USER_LOGIC_I/writeAddress_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   0.912  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg)
+     LUT3:I0->O           20   0.205   1.092  USER_LOGIC_I/_n0125_inv1 (USER_LOGIC_I/_n0125_inv)
+     FDE:CE                    0.322          USER_LOGIC_I/writeData_0
+    ----------------------------------------
+    Total                      2.978ns (0.974ns logic, 2.004ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'USER_LOGIC_I/pixel_clk'
+  Clock period: 7.711ns (frequency: 129.691MHz)
+  Total number of paths / destination ports: 2169 / 46
+-------------------------------------------------------------------------
+Delay:               7.711ns (Levels of Logic = 2)
+  Source:            USER_LOGIC_I/hCount_5 (FF)
+  Destination:       USER_LOGIC_I/Maddsub_n0112 (DSP)
+  Source Clock:      USER_LOGIC_I/pixel_clk rising
+  Destination Clock: USER_LOGIC_I/pixel_clk rising
+
+  Data Path: USER_LOGIC_I/hCount_5 to USER_LOGIC_I/Maddsub_n0112
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   0.878  USER_LOGIC_I/hCount_5 (USER_LOGIC_I/hCount_5)
+     LUT2:I0->O           13   0.203   1.161  USER_LOGIC_I/GND_14_o_GND_14_o_equal_7_o<9>_SW0 (N4)
+     LUT6:I3->O            4   0.205   0.683  USER_LOGIC_I/Result<4>1 (USER_LOGIC_I/Result<4>)
+     DSP48A1:B4                4.134          USER_LOGIC_I/Maddsub_n0112
+    ----------------------------------------
+    Total                      7.711ns (4.989ns logic, 2.722ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.950ns (frequency: 512.794MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               1.950ns (Levels of Logic = 1)
+  Source:            USER_LOGIC_I/clk_counter_0 (FF)
+  Destination:       USER_LOGIC_I/clk_counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: USER_LOGIC_I/clk_counter_0 to USER_LOGIC_I/clk_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  USER_LOGIC_I/clk_counter_0 (USER_LOGIC_I/clk_counter_0)
+     INV:I->O              1   0.206   0.579  USER_LOGIC_I/Mcount_clk_counter_xor<0>11_INV_0 (USER_LOGIC_I/Result<0>)
+     FD:D                      0.102          USER_LOGIC_I/clk_counter_0
+    ----------------------------------------
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 58 / 47
+-------------------------------------------------------------------------
+Offset:              3.492ns (Levels of Logic = 2)
+  Source:            S_AXI_ARESETN (PAD)
+  Destination:       USER_LOGIC_I/writeAddress_16 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_ARESETN to USER_LOGIC_I/writeAddress_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.651  S_AXI_ARESETN_IBUF (S_AXI_ARESETN_IBUF)
+     LUT3:I2->O           20   0.205   1.092  USER_LOGIC_I/_n0125_inv1 (USER_LOGIC_I/_n0125_inv)
+     FDE:CE                    0.322          USER_LOGIC_I/writeData_0
+    ----------------------------------------
+    Total                      3.492ns (1.749ns logic, 1.744ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'USER_LOGIC_I/pixel_clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            USER_LOGIC_I/R_0 (FF)
+  Destination:       R<2> (PAD)
+  Source Clock:      USER_LOGIC_I/pixel_clk rising
+
+  Data Path: USER_LOGIC_I/R_0 to R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.650  USER_LOGIC_I/R_0 (USER_LOGIC_I/R_0)
+     OBUF:I->O                 2.571          R_2_OBUF (R<2>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Offset:              4.817ns (Levels of Logic = 2)
+  Source:            AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3 (FF)
+  Destination:       S_AXI_WREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3 to S_AXI_WREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   0.912  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3 (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3)
+     LUT3:I0->O            4   0.205   0.683  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY_OBUF)
+     OBUF:I->O                 2.571          S_AXI_WREADY_OBUF (S_AXI_WREADY)
+    ----------------------------------------
+    Total                      4.817ns (3.223ns logic, 1.594ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    2.978|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock USER_LOGIC_I/pixel_clk
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+USER_LOGIC_I/pixel_clk|    7.711|         |         |         |
+clk                   |    4.899|         |         |         |
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+S_AXI_ACLK            |    2.821|         |         |         |
+USER_LOGIC_I/pixel_clk|    3.596|         |         |         |
+clk                   |    1.950|         |         |         |
+----------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.49 secs
+ 
+--> 
+
+Total memory usage is 191552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  121 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

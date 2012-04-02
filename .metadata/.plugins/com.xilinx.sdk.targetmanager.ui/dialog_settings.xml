@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\workspace_gp_lab\GP_LAB_EDK_hw_platform\system.bit" key="GP_LAB_EDK_hw_platform-bitFile"/>
+	<item value="C:\workspace_gp_lab\GP_LAB_EDK_hw_platform\system_bd.bmm" key="GP_LAB_EDK_hw_platform-bmmFile"/>
+	<item value="bootloop" key="GP_LAB_EDK_hw_platform-microblaze_0-initElf"/>
+</section>

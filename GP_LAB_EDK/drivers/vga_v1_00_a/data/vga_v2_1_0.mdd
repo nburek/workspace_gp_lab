@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\workspace_gp_lab\GP_LAB_EDK/drivers/vga_v1_00_a/data/vga_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sat Mar 31 20:54:01 2012 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER vga
+
+  OPTION supported_peripherals = (vga);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

@@ -1,0 +1,14 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 31, 2012
+ *      Author: nb418308
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	printf("Test");
+	return 0;
+}

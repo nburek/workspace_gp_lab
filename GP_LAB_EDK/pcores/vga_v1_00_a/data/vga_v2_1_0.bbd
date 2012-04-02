@@ -1,0 +1,9 @@
+##############################################################################
+## Filename:          C:\workspace_gp_lab\GP_LAB_EDK\pcores/vga_v1_00_a/data/vga_v2_1_0.bbd
+## Description:       Black Box Definition
+## Date:              Sun Apr 01 12:03:12 2012 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+Files
+################################################################################
+vga.ngc,videoMemory.ngc

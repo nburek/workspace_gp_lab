@@ -1,0 +1,18 @@
+C:\workspace_gp_lab\GP_LAB_EDK\implementation\system.ngc 1333300915
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/push_buttons_4bits_wrapper.ngc 1333300816
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/dip_switches_8bits_wrapper.ngc 1333300857
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/rs232_uart_1_wrapper.ngc 1333300802
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/proc_sys_reset_0_wrapper.ngc 1333300612
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/clock_generator_0_wrapper.ngc 1333300884
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_ilmb_wrapper.ngc 1333300871
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_dlmb_wrapper.ngc 1333300875
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/axi4lite_0_wrapper.ngc 1333300888
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_wrapper.ngc 1333300880
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/vga_0_wrapper.ngc 1333300892
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_i_bram_ctrl_wrapper.ngc 1333300627
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_d_bram_ctrl_wrapper.ngc 1333300640
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/debug_module_wrapper.ngc 1333300762
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/leds_8bits_wrapper.ngc 1333300831
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/digilent_sevseg_disp_wrapper.ngc 1333300842
+C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_bram_block_wrapper.ngc 1333300649
+OK

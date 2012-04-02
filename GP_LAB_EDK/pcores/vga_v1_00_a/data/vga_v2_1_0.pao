@@ -1,0 +1,17 @@
+##############################################################################
+## Filename:          C:\workspace_gp_lab\GP_LAB_EDK\pcores/vga_v1_00_a/data/vga_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Apr 01 12:03:12 2012 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib axi_lite_ipif_v1_01_a address_decoder vhdl
+lib axi_lite_ipif_v1_01_a slave_attachment vhdl
+lib vga_v1_00_a videoMemory verilog
+lib axi_lite_ipif_v1_01_a axi_lite_ipif vhdl
+lib vga_v1_00_a user_logic vhdl
+lib vga_v1_00_a vga vhdl

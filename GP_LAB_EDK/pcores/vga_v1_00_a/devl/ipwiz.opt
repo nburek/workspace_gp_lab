@@ -1,0 +1,10 @@
+-batch 
+-create vga 
+-ver 1.00.a 
+-dir "C:\workspace_gp_lab\GP_LAB_EDK" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-ise 
+-driver 

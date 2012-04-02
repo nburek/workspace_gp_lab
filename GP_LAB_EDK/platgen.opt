@@ -1,0 +1,11 @@
+-p
+xc6slx16csg324-3
+-lang
+vhdl
+-intstyle
+default
+-lp
+C:/Xilinx/13.4/ISE_DS/EDK/board/
+-msg
+__xps/ise/xmsgprops.lst
+system.mhs

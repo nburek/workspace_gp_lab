@@ -1,0 +1,36 @@
+
+**** Build of configuration Debug for project peripheral_tests_2 ****
+
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../peripheral_tests_bsp_2/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:95: warning: unused variable 'color'
+../src/testperiph.c:189:4: warning: "/*" within comment
+Finished building: ../src/testperiph.c
+ 
+Building target: peripheral_tests_2.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_2/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"peripheral_tests_2.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xuartlite_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: peripheral_tests_2.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size peripheral_tests_2.elf  |tee "peripheral_tests_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9722	    388	  20646	  30756	   7824	peripheral_tests_2.elf
+Finished building: peripheral_tests_2.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck peripheral_tests_2.elf -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe microblaze_0  |tee "peripheral_tests_2.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.4 Build EDK_O.87xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe
+microblaze_0 peripheral_tests_2.elf 
+
+ELF file	: peripheral_tests_2.elf
+elfcheck passed.
+Finished building: peripheral_tests_2.elf.elfcheck
+ 
