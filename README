@@ -1,0 +1,30 @@
+To download this repo for the first time use:
+"git clone git@github.com:nburek/workspace_gb_lab.git"
+in the folder you want to download to. This will install the repository 
+on your machine. 
+
+To commit your changes back to the repository you must first use:
+"git commit [filename] -m "Description of what you changed/added." or 
+"git commit -a -m "Description of what you changed/added." to commit 
+all the modified files. This will not add new files since git only 
+checks against the list of known files.
+
+After you have commited the changes you must push the files back to 
+the repository by using:
+"git push origin [branch name]"
+You can make multiple commits before pushing out. This allows you to 
+enter different messages for different files, based on what you changed.
+
+To add a new file to the Repo use:
+"git add [filename|folder]"
+Then commit the change and push the files out. 
+
+To create a new branch you need to use the following commands:
+"git branch [new branch name]" this creates the new branch
+"git checkout [new branch name]" this will change your working branch 
+to the new branch.
+
+To merge a branch1 into branch2 do:
+"git checkout branch2" to change to work with branch2 then do
+"git merge branch1" to merge branch1 into branch2. Then do a commit 
+and push branch2 back to the origin. 
