@@ -5,69 +5,86 @@ make all
 Building file: ../src/Graphics.c
 Invoking: MicroBlaze g++ compiler
 mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/Graphics.d" -MT"src/Graphics.d" -o"src/Graphics.o" "../src/Graphics.c"
-Finished building: ../src/Graphics.c
- 
-Building file: ../src/RoundMeter.cpp
-Invoking: MicroBlaze g++ compiler
-mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/RoundMeter.d" -MT"src/RoundMeter.d" -o"src/RoundMeter.o" "../src/RoundMeter.cpp"
-../src/Widget.h:13: warning: 'class Widget' has virtual functions but non-virtual destructor
-../src/RoundMeter.h:16: warning: 'class RoundMeter' has virtual functions but non-virtual destructor
-../src/RoundMeter.cpp: In member function 'virtual void RoundMeter::draw()':
-../src/RoundMeter.cpp:22: warning: converting to 'int' from 'double'
-Finished building: ../src/RoundMeter.cpp
- 
-Building file: ../src/Widget.cpp
-Invoking: MicroBlaze g++ compiler
-mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/Widget.d" -MT"src/Widget.d" -o"src/Widget.o" "../src/Widget.cpp"
-../src/Widget.h:13: warning: 'class Widget' has virtual functions but non-virtual destructor
-Finished building: ../src/Widget.cpp
- 
-Building file: ../src/main.cc
-Invoking: MicroBlaze g++ compiler
-mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.cc"
-../src/main.cc: In function 'int main()':
-../src/main.cc:20: warning: unused variable 'color'
-../src/main.cc:21: warning: unused variable 'delayCounter'
-../src/main.cc:33: warning: unused variable 'angle'
-Finished building: ../src/main.cc
- 
-Building target: Widget_System.elf
-Invoking: MicroBlaze g++ linker
-mb-g++ -L../../Widget_System_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"Widget_System.elf"  ./src/Graphics.o ./src/RoundMeter.o ./src/Widget.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: Widget_System.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size Widget_System.elf  |tee "Widget_System.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  35636	   1429	   3184	  40249	   9d39	Widget_System.elf
-Finished building: Widget_System.elf.size
- 
-Invoking: Xilinx ELF Check
-elfcheck Widget_System.elf -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe microblaze_0  |tee "Widget_System.elf.elfcheck"
-elfcheck
-Xilinx EDK 13.4 Build EDK_O.87xd
-Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe
-microblaze_0 Widget_System.elf 
-
-ELF file	: Widget_System.elf
-ERROR:EDK:3165 - elfcheck failed!
-The following sections did not fit into Processor  memory:
-	Section .stack (0x9980 - 0x9D7F)
-	Section .bss (0x9110 - 0x997F)
-	Section .gcc_except_table (0x90C0 - 0x910C)
-	Section .jcr (0x90BC - 0x90BF)
-	Section .eh_frame (0x90B8 - 0x90BB)
-	Section .data (0x8B88 - 0x90B7)
-	Section .rodata (0x86A4 - 0x8B83)
-	Section .dtors (0x869C - 0x86A3)
-	Section .ctors (0x8694 - 0x869B)
-	Section .fini (0x8674 - 0x8693)
-	Section .init (0x8634 - 0x8673)
-	Section .text (0x50 - 0x8633)
-
-Try using the linker script generation tools to generate an ELF that maps
-correctly to your hardware design.
-Finished building: Widget_System.elf.elfcheck
- 
+../src/Graphics.c:251:4: error: invalid suffix "b00111000" on integer constant
+../src/Graphics.c:251:15: error: invalid suffix "b01001100" on integer constant
+../src/Graphics.c:251:26: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:251:37: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:251:48: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:251:59: error: invalid suffix "b01100100" on integer constant
+../src/Graphics.c:251:70: error: invalid suffix "b00111000" on integer constant
+../src/Graphics.c:251:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:252:4: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:252:15: error: invalid suffix "b01110000" on integer constant
+../src/Graphics.c:252:26: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:252:37: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:252:48: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:252:59: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:252:70: error: invalid suffix "b11111100" on integer constant
+../src/Graphics.c:252:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:253:4: error: invalid suffix "b01111100" on integer constant
+../src/Graphics.c:253:15: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:253:26: error: invalid suffix "b00001110" on integer constant
+../src/Graphics.c:253:37: error: invalid suffix "b00111100" on integer constant
+../src/Graphics.c:253:48: error: invalid suffix "b01111000" on integer constant
+../src/Graphics.c:253:59: error: invalid suffix "b11100000" on integer constant
+../src/Graphics.c:253:70: error: invalid suffix "b11111110" on integer constant
+../src/Graphics.c:253:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:254:4: error: invalid suffix "b01111110" on integer constant
+../src/Graphics.c:254:15: error: invalid suffix "b00001100" on integer constant
+../src/Graphics.c:254:26: error: invalid suffix "b00011000" on integer constant
+../src/Graphics.c:254:37: error: invalid suffix "b00111100" on integer constant
+../src/Graphics.c:254:48: error: invalid suffix "b00000110" on integer constant
+../src/Graphics.c:254:59: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:254:70: error: invalid suffix "b01111100" on integer constant
+../src/Graphics.c:254:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:255:4: error: invalid suffix "b00011100" on integer constant
+../src/Graphics.c:255:15: error: invalid suffix "b00111100" on integer constant
+../src/Graphics.c:255:26: error: invalid suffix "b01101100" on integer constant
+../src/Graphics.c:255:37: error: invalid suffix "b11001100" on integer constant
+../src/Graphics.c:255:48: error: invalid suffix "b11111110" on integer constant
+../src/Graphics.c:255:59: error: invalid suffix "b00001100" on integer constant
+../src/Graphics.c:255:70: error: invalid suffix "b00001100" on integer constant
+../src/Graphics.c:255:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:256:4: error: invalid suffix "b11111100" on integer constant
+../src/Graphics.c:256:15: error: invalid suffix "b11000000" on integer constant
+../src/Graphics.c:256:26: error: invalid suffix "b11111100" on integer constant
+../src/Graphics.c:256:37: error: invalid suffix "b00000110" on integer constant
+../src/Graphics.c:256:48: error: invalid suffix "b00000110" on integer constant
+../src/Graphics.c:256:59: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:256:70: error: invalid suffix "b01111100" on integer constant
+../src/Graphics.c:256:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:257:4: error: invalid suffix "b00111100" on integer constant
+../src/Graphics.c:257:15: error: invalid suffix "b01100000" on integer constant
+../src/Graphics.c:257:26: error: invalid suffix "b11000000" on integer constant
+../src/Graphics.c:257:37: error: invalid suffix "b11111100" on integer constant
+../src/Graphics.c:257:48: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:257:59: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:257:70: error: invalid suffix "b01111100" on integer constant
+../src/Graphics.c:257:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:258:4: error: invalid suffix "b11111110" on integer constant
+../src/Graphics.c:258:15: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:258:26: error: invalid suffix "b00001100" on integer constant
+../src/Graphics.c:258:37: error: invalid suffix "b00011000" on integer constant
+../src/Graphics.c:258:48: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:258:59: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:258:70: error: invalid suffix "b00110000" on integer constant
+../src/Graphics.c:258:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:259:4: error: invalid suffix "b01111000" on integer constant
+../src/Graphics.c:259:15: error: invalid suffix "b11000100" on integer constant
+../src/Graphics.c:259:26: error: invalid suffix "b11100100" on integer constant
+../src/Graphics.c:259:37: error: invalid suffix "b01111000" on integer constant
+../src/Graphics.c:259:48: error: invalid suffix "b10011110" on integer constant
+../src/Graphics.c:259:59: error: invalid suffix "b10000110" on integer constant
+../src/Graphics.c:259:70: error: invalid suffix "b01111100" on integer constant
+../src/Graphics.c:259:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c:260:4: error: invalid suffix "b01111100" on integer constant
+../src/Graphics.c:260:15: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:260:26: error: invalid suffix "b11000110" on integer constant
+../src/Graphics.c:260:37: error: invalid suffix "b01111110" on integer constant
+../src/Graphics.c:260:48: error: invalid suffix "b00000110" on integer constant
+../src/Graphics.c:260:59: error: invalid suffix "b00001100" on integer constant
+../src/Graphics.c:260:70: error: invalid suffix "b01111000" on integer constant
+../src/Graphics.c:260:81: error: invalid suffix "b00000000" on integer constant
+../src/Graphics.c: In function 'double sin(double)':
+../src/Graphics.c:33: warning: no return statement in function returning non-void
+make: *** [src/Graphics.o] Error 1

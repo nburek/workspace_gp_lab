@@ -7,6 +7,31 @@
 
 #include "Graphics.h"
 
+
+double sin(double angle)
+{
+	while (angle>=3.14159265)
+		angle-=3.14159265;
+	double xSquared = angle*angle;
+	double x = angle;
+	double ans = x;
+	u8 posOrNeg = 0;
+	u16 lcv = 0;
+	double fact = 1;
+	for (lcv = 3;lcv<26;lcv=lcv+2)
+	{
+		fact *= (lcv*(lcv-1));
+		x *= ((xSquared)/(lcv*(lcv-1)));
+
+		if (posOrNeg == 0)
+			ans -= x;
+		else
+			ans += x;
+
+		posOrNeg = 1-posOrNeg;
+	}
+}
+
 double sin(int angle)
 {
 	double lTable[] = {0,0.17364817766693,0.342020143325669,0.5,0.642787609686539,0.766044443118978,0.866025403784439,0.939692620785908,0.984807753012208,1,0.984807753012208,0.939692620785908,0.866025403784439,0.766044443118978,0.642787609686539,0.5,0.342020143325669,0.17364817766693,0};
