@@ -70,3 +70,67 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.cdt.core 1 0 2012-04-01 13:37:13.400
 !MESSAGE Indexed 'peripheral_tests_bsp_2' (0 sources, 8 headers) in 0.02 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2012-04-06 16:15:32.750 -----------------------------------------------
+eclipse.buildId=Release 13.4 Build SDK_O.87xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-04-06 16:22:31.774
+!MESSAGE Indexed 'Widget_System' (0 sources, 8 headers) in 0.15 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.xilinx.sdk.sw 4 0 2012-04-06 16:22:42.657
+!MESSAGE The Hardware Project referenced by this BSP (Widget_System) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-04-06 16:22:43.521
+!MESSAGE Indexed 'Widget_System' (1 sources, 39 headers) in 0.83 sec: 303 declarations; 579 references; 3 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-04-06 16:24:00.885
+!MESSAGE Indexed 'Widget_System' (0 sources, 8 headers) in 0.01 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.core.resources 4 2 2012-04-06 16:24:11.116
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.sw.ui.internal.editors.MSSViewer.refreshView(Unknown Source)
+	at com.xilinx.sdk.sw.ui.internal.editors.MSSViewer.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:327)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1181)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.xilinx.sdk.sw 4 0 2012-04-06 16:24:11.127
+!MESSAGE The Hardware Project referenced by this BSP (Widget_System) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-04-06 16:24:11.362
+!MESSAGE Indexed 'Widget_System' (0 sources, 39 headers) in 0.23 sec: 302 declarations; 579 references; 3 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.23%)
+!SESSION 2012-04-06 16:26:53.069 -----------------------------------------------
+eclipse.buildId=Release 13.4 Build SDK_O.87xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-04-06 16:29:21.059
+!MESSAGE Indexed 'Widget_System_bsp' (0 sources, 8 headers) in 0.07 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-04-06 16:29:21.479
+!MESSAGE Indexed 'Widget_System' (1 sources, 39 headers) in 0.41 sec: 303 declarations; 579 references; 3 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.23%)
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2012-04-06 21:16:33.610
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(Unknown Source)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(Unknown Source)

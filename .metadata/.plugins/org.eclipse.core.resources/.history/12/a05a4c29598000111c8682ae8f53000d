@@ -1,0 +1,8 @@
+#Fri Apr 06 21:27:03 CDT 2012
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/xilinx.gnu.mb.exe.debug.451204809/CPATH/delimiter=;
+environment/buildEnvironmentInclude/xilinx.gnu.mb.exe.debug.451204809/CPATH/operation=remove
+environment/buildEnvironmentInclude/xilinx.gnu.mb.exe.debug.451204809/C_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/xilinx.gnu.mb.exe.debug.451204809/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/xilinx.gnu.mb.exe.debug.451204809/append=true
+environment/buildEnvironmentInclude/xilinx.gnu.mb.exe.debug.451204809/appendContributed=true

@@ -1,0 +1,20 @@
+/*
+ * RoundMeter.cpp
+ *
+ *  Created on: Apr 6, 2012
+ *      Author: nb418308
+ */
+
+#include "RoundMeter.cpp"
+#include "Graphics.h"
+
+RoundMeter::RoundMeter(int x, int y) : Widget(x,y)
+{
+
+}
+
+void RoundMeter::draw()
+{
+	drawCircle(x,y,100,BLACK,1);
+	drawCircle(x,y,90,WHITE,1);
+}

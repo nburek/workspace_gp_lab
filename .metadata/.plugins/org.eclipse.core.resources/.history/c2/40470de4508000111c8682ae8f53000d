@@ -1,0 +1,13 @@
+/*
+ * RoundMeter.cpp
+ *
+ *  Created on: Apr 6, 2012
+ *      Author: nb418308
+ */
+
+#include "RoundMeter.cpp"
+
+RoundMeter::RoundMeter(int x, int y) : Widget(x,y)
+{
+
+}

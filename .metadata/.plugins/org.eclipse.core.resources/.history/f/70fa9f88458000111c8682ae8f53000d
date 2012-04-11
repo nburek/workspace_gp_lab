@@ -1,0 +1,15 @@
+/*
+ * Widget.h
+ *
+ *  Created on: Apr 6, 2012
+ *      Author: nb418308
+ */
+
+#ifndef WIDGET_H_
+#define WIDGET_H_
+
+#include "Widget.cpp"
+
+
+
+#endif /* WIDGET_H_ */

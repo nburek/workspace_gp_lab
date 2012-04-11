@@ -1,0 +1,73 @@
+
+**** Build of configuration Debug for project Widget_System ****
+
+make all 
+Building file: ../src/Graphics.c
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/Graphics.d" -MT"src/Graphics.d" -o"src/Graphics.o" "../src/Graphics.c"
+Finished building: ../src/Graphics.c
+ 
+Building file: ../src/RoundMeter.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/RoundMeter.d" -MT"src/RoundMeter.d" -o"src/RoundMeter.o" "../src/RoundMeter.cpp"
+../src/Widget.h:13: warning: 'class Widget' has virtual functions but non-virtual destructor
+../src/RoundMeter.h:16: warning: 'class RoundMeter' has virtual functions but non-virtual destructor
+../src/RoundMeter.cpp: In member function 'virtual void RoundMeter::draw()':
+../src/RoundMeter.cpp:22: warning: converting to 'int' from 'double'
+Finished building: ../src/RoundMeter.cpp
+ 
+Building file: ../src/Widget.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/Widget.d" -MT"src/Widget.d" -o"src/Widget.o" "../src/Widget.cpp"
+../src/Widget.h:13: warning: 'class Widget' has virtual functions but non-virtual destructor
+Finished building: ../src/Widget.cpp
+ 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -Os -g3 -c -fmessage-length=0 -I../../Widget_System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:20: warning: unused variable 'color'
+../src/main.cc:21: warning: unused variable 'delayCounter'
+../src/main.cc:33: warning: unused variable 'angle'
+Finished building: ../src/main.cc
+ 
+Building target: Widget_System.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -L../../Widget_System_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"Widget_System.elf"  ./src/Graphics.o ./src/RoundMeter.o ./src/Widget.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Widget_System.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Widget_System.elf  |tee "Widget_System.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   1429	   3184	  40249	   9d39	Widget_System.elf
+Finished building: Widget_System.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Widget_System.elf -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe microblaze_0  |tee "Widget_System.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.4 Build EDK_O.87xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe
+microblaze_0 Widget_System.elf 
+
+ELF file	: Widget_System.elf
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0x9980 - 0x9D7F)
+	Section .bss (0x9110 - 0x997F)
+	Section .gcc_except_table (0x90C0 - 0x910C)
+	Section .jcr (0x90BC - 0x90BF)
+	Section .eh_frame (0x90B8 - 0x90BB)
+	Section .data (0x8B88 - 0x90B7)
+	Section .rodata (0x86A4 - 0x8B83)
+	Section .dtors (0x869C - 0x86A3)
+	Section .ctors (0x8694 - 0x869B)
+	Section .fini (0x8674 - 0x8693)
+	Section .init (0x8634 - 0x8673)
+	Section .text (0x50 - 0x8633)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.
+Finished building: Widget_System.elf.elfcheck
+ 
