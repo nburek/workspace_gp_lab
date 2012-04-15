@@ -4,6 +4,11 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.mb.exe.debug.451204809;xilinx.gnu.mb.exe.debug.451204809.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/microblaze-xilinx-elf"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/backward"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/include"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../microblaze-xilinx-elf/include"/>
 <includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2"/>
 <includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/microblaze-xilinx-elf"/>
 <includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/backward"/>
@@ -168,11 +173,11 @@
 </instance>
 <instance id="xilinx.gnu.mb.exe.debug.451204809;xilinx.gnu.mb.exe.debug.451204809.;xilinx.gnu.mb.cxx.toolchain.compiler.debug.1602469062;xilinx.gnu.mb.cxx.compiler.input.1948604290">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2"/>
-<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/microblaze-xilinx-elf"/>
-<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/backward"/>
-<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/include"/>
-<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/microblaze-xilinx-elf"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../include/c++/4.1.2/backward"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/include"/>
+<includePath path="c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../microblaze-xilinx-elf/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>

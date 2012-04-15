@@ -2,4 +2,15 @@
 **** Build of configuration Debug for project empty_cpp_0 ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/RoundMeter.cpp
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../empty_cpp_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/RoundMeter.d" -MT"src/RoundMeter.d" -o"src/RoundMeter.o" "../src/RoundMeter.cpp"
+../src/Widget.h:13: warning: 'class Widget' has virtual functions but non-virtual destructor
+../src/Graphics.h:39: error: previous declaration of 'double cos(double)' with 'C++' linkage
+c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../microblaze-xilinx-elf/include/math.h:76: error: conflicts with new declaration with 'C' linkage
+../src/Graphics.h:38: error: previous declaration of 'double sin(double)' with 'C++' linkage
+c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../microblaze-xilinx-elf/include/math.h:77: error: conflicts with new declaration with 'C' linkage
+../src/RoundMeter.h:16: warning: 'class RoundMeter' has virtual functions but non-virtual destructor
+../src/RoundMeter.cpp: In member function 'virtual void RoundMeter::draw()':
+../src/RoundMeter.cpp:22: warning: converting to 'int' from 'double'
+make: *** [src/RoundMeter.o] Error 1
