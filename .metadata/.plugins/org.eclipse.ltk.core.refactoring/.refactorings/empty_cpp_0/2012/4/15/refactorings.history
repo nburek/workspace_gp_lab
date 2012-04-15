@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;empty_cpp_0/src/Graphics&apos; to &apos;Graphics.ccp&apos;" description="Rename resource &apos;Graphics&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Graphics" name="Graphics.ccp" stamp="1334165751485" updateReferences="true"/>
+</session>

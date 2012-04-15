@@ -1,0 +1,20 @@
+#include"common.h"
+#include"mc_intr_codes.h"
+#include"widget.h"
+#include"widget_table.h"
+#include"progress_bar.h"
+using namespace std;
+
+WidgetTable WT;
+
+int main(){
+
+	u8 bytes[] = {'B', '8', '7', '6'};
+	Packet p(4, bytes);
+
+	s16 loc = WT.insert(new PBar(80));//proper way to add a widget
+	WT[loc]->render();
+
+	return 0;
+
+}

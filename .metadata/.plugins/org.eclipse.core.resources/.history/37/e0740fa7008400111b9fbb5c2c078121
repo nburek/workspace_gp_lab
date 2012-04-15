@@ -1,0 +1,16 @@
+/*
+ * Add.cpp
+ *
+ *  Created on: Apr 11, 2012
+ *      Author: ACM
+ */
+
+#include "Add.h"
+
+Add::Add() {
+	adder = 0;
+}
+Add::void addSum(){
+	adder++;
+}
+

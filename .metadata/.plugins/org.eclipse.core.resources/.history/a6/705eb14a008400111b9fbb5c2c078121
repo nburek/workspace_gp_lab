@@ -1,0 +1,17 @@
+/*
+ * Add.cpp
+ *
+ *  Created on: Apr 11, 2012
+ *      Author: ACM
+ */
+
+#include "Add.h"
+
+Add::Add() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Add::~Add() {
+	// TODO Auto-generated destructor stub
+}

@@ -1,0 +1,41 @@
+/*
+ * Empty C++ Application
+ */
+#include <stdio.h>
+#include "Graphics.h"
+#include "Add.h"
+#include "xbasic_types.h"
+
+
+	int main()
+	{
+		int x = 0;
+		int y = 215;
+		u8 color = 1;
+		volatile int delayCounter = 0;
+		Add test;
+		test.addSum();
+		for (x = 0; x<MAX_WIDTH; ++x)
+			for (y = 0; y<MAX_HEIGHT; ++y)
+				Xil_Out32(VGA_BASEADDR, ((y*384 + x)<<3)| (7));
+		print("---Entering main---\n\r");
+		x = 100;
+		y = 100;
+
+		//print("Starting to draw RoundMeter.");
+			drawCircle(x,y,50,BLACK,1);
+			drawCircle(x,y,48,WHITE,1);
+			drawCircle(x,y,5,BLUE,1);
+			int x2 = 45*cos(2.15) + x;
+			//int y2 = y + 45*( angle - (angle*angle*angle)/6.0 + (angle*angle*angle*angle*angle)/120.0 - (angle*angle*angle*angle*angle*angle*angle)/5040);
+			int y2 = 45*sin(2.15) + y;
+
+			int deltaX = 5*cos(2.15 + (3.14/2));
+			int deltaY = 5*sin(2.15 + (3.14/2));
+			drawTriangle(x2, y2, (x+deltaX),(y+deltaY),(x-deltaX),(y-deltaY),BLUE, 1);
+			drawLine(x,y,x2,y2,RED);
+			//drawTriangle();
+			//print("Done drawing RoundMeter.");
+
+	return 0;
+}

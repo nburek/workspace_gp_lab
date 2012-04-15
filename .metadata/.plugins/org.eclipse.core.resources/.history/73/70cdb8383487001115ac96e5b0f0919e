@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string>
+#include"common.h"
+#include"mc_intr_codes.h"
+#include"widget.h"
+#include"widget_table.h"
+#include"progress_bar.h"
+using namespace std;
+
+WidgetTable WT;
+
+int main(){
+
+	u8 bytes[] = {'B', '8', '7', '6'};
+	Packet p(4, bytes);
+
+	s16 loc = WT.insert(new PBar(80));//proper way to add a widget
+	WT[loc]->render();
+	cout << ( WT[loc]-> runFunction(0, p)[0]) << endl;
+
+	cout << p[0] << endl; // if the two cout output the same character the stream came through ok
+
+	cout << (typeid(*WT[loc]).name()) << endl;
+	string name = typeid(*WT[loc]).name();
+	name.erase(0, 6);
+	cout << (name == "PBar") << endl;
+
+	cout << sizeof(*WT[loc]) << endl;
+
+	system("pause");
+	return 0;
+
+}

@@ -1,0 +1,18 @@
+
+#include"common.h"
+
+#include "xbasic_types.h"
+#include "xuartlite_l.h"
+#include "xparameters.h"
+
+struct ParamPack_IIDD: public ParamPack{
+
+	int word1;
+	int word2;
+	double dec1;
+	double dec2;
+
+	u8 getPacletLength(){
+		return 4;
+	}
+};

@@ -1,0 +1,25 @@
+elfcheck
+Xilinx EDK 13.4 Build EDK_O.87xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe
+microblaze_0 WidgetCore.elf 
+
+ELF file	: WidgetCore.elf
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0x63234 - 0x63637)
+	Section .bss (0x61BC0 - 0x63233)
+	Section .gcc_except_table (0x60B14 - 0x61BBC)
+	Section .jcr (0x60B10 - 0x60B13)
+	Section .eh_frame (0x60B0C - 0x60B0F)
+	Section .data (0x60540 - 0x60B0B)
+	Section .rodata (0x5D570 - 0x6053F)
+	Section .dtors (0x5D560 - 0x5D56F)
+	Section .ctors (0x5D540 - 0x5D55F)
+	Section .fini (0x5D520 - 0x5D53F)
+	Section .init (0x5D4DC - 0x5D51F)
+	Section .text (0x50 - 0x5D4DB)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.

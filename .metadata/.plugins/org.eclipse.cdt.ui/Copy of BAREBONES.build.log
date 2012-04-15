@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project Copy of BAREBONES ****
+
+make all 
+Building target: Copy of BAREBONES.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -L../../BAREBONES_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"Copy of BAREBONES.elf"  ./src/Add.o ./src/Graphics.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Copy of BAREBONES.elf
+' '
+make: *** No rule to make target `Copy', needed by `secondary-outputs'.  Stop.

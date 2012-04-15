@@ -1,0 +1,15 @@
+
+#include"common.h"
+#include"param_packet.h"
+
+struct ParamPack_IIDD: public ParamPack{
+
+	int word1;
+	int word2;
+	double dec1;
+	double dec2;
+
+	u8 getPacletLength(){
+		return 4;
+	}
+};

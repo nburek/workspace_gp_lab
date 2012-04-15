@@ -1,0 +1,51 @@
+/*
+ * Copyright (c) 2009 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "xgpio.h"
+#include "xparameters.h"
+
+#define LED_CHANNEL 1
+
+//void print(char *str);
+
+int main()
+{
+
+    //print("Hello World\n\r");
+
+    XGpio GpioOutput;
+    char foo = 0x00;
+    XGpio_Initialize(&GpioOutput, XPAR_LEDS_8BITS_DEVICE_ID);
+    XGpio_SetDataDirection(&GpioOutput, LED_CHANNEL, 0x0);
+
+    while (1==1)
+    {
+    	foo = getchar();
+        XGpio_DiscreteWrite(&GpioOutput, LED_CHANNEL, foo);
+    }
+    //GpioOutputExample(XPAR_LEDS_8BITS_DEVICE_ID,8);
+
+
+    return 0;
+}
