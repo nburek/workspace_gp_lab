@@ -6,4 +6,15 @@ Command Line: elfcheck -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe
 microblaze_0 Barebones2.elf 
 
 ELF file	: Barebones2.elf
-elfcheck passed.
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0x948C - 0x988F)
+	Section .bss (0x8818 - 0x948B)
+	Section .gcc_except_table (0x87C4 - 0x8810)
+	Section .jcr (0x87C0 - 0x87C3)
+	Section .eh_frame (0x87BC - 0x87BF)
+	Section .data (0x8238 - 0x87BB)
+	Section .rodata (0x7F80 - 0x8237)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.

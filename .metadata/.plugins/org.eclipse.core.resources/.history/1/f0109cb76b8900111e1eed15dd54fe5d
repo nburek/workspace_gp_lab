@@ -1,0 +1,15 @@
+/*
+ * dial.h
+ *
+ *  Created on: Apr 18, 2012
+ *      Author: ACM
+ */
+
+#ifndef DIAL_H_
+#define DIAL_H_
+
+#include "widget.h"
+
+
+
+#endif /* DIAL_H_ */

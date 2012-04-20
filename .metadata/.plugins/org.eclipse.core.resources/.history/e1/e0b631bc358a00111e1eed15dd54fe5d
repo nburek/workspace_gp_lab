@@ -1,0 +1,23 @@
+/*
+ * dial.h
+ *
+ *  Created on: Apr 18, 2012
+ *      Author: ACM
+ */
+
+#ifndef DIAL_H_
+#define DIAL_H_
+
+#include<stdlib.h>
+#include "widget.h"
+#include "Graphics.h"
+
+Packet DIAL_runFunction(Widget* wthis, u8 funcN, Packet* pack);
+struct widget new_DialWidget(u32 circle_x, u32 circle_y);
+
+typedef struct dial_widget {
+	u32 circleX, circleY;
+} DialWidget;
+
+
+#endif /* DIAL_H_ */

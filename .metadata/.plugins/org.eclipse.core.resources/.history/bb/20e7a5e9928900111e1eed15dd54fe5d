@@ -1,0 +1,87 @@
+/*
+ * dial.h
+ *
+ *  Created on: Apr 18, 2012
+ *      Author: ACM
+ */
+
+#ifndef DIAL_H_
+#define DIAL_H_
+
+#include<stdio.h>
+#include "widget.h"
+#include "Graphics.h"
+
+Packet DIAL_runFunction(const void* wthis, u8 funcN, Packet* pack);
+
+struct dial_widget {
+	u32 circleX, circleY;
+}
+
+struct widget new(struct widget* base, struct dial_widget* derive_type){
+
+	struct widget Dial ={
+			.x = 0,
+			.y = 0,
+			.runFunction = DIAL_runFunction
+	};
+
+	Dial.derive = malloc(sizeof(derive_type));
+
+	return Dial;
+}
+
+
+Packet DIAL_runFunction(const void* _this, u8 funcN, Packet* pack){
+
+	struct dial_widget* this = (struct dial_widget*)_this;
+
+	switch(funcN){
+
+		case 1:{
+			this->circleX = 85;
+			this->circleY = 65;
+
+			//stuff to draw the shell of the round meter
+			drawCircle(this->circleX,this->circleY,50,BLACK,1);
+			drawCircle(this->circleX,this->circleY,48,WHITE,1);
+			float fi = 0;
+			for(fi = 0; fi <= 6.2831853; fi += (3.14159269/12)){
+				drawLine(this->circleX,this->circleY,(int)(this->circleX+48*cos(fi)),(int)(this->circleY+48*sin(fi)),BLACK);
+			}
+			drawDigit(this->circleX+52,this->circleY-4,0,BLACK);
+			drawNumber(this->circleX-75,this->circleY-4,180,BLACK);
+			drawNumber(this->circleX-8,this->circleY-59,90,BLACK);
+			drawNumber(this->circleX-12,this->circleY+52,270,BLACK);
+		}
+		case 2:{
+
+			//stuff to draw a round meter
+			u8 degree = 0;
+			u8 oldDegree = degree;
+
+			degree = pack->bytes[0];
+
+			if(oldDegree != degree)
+			{
+				double angle = ((double)degree) * 3.14159/180.0;
+				//print("Starting to draw RoundMeter.");
+				int x2 = (int)(43*cos(angle) + this->circleX);
+				//int y2 = y + 45*( angle - (angle*angle*angle)/6.0 + (angle*angle*angle*angle*angle)/120.0 - (angle*angle*angle*angle*angle*angle*angle)/5040);
+				int y2 = (int)(-43*sin(angle) + this->circleY);
+
+				int deltaX = (int)(6*cos(angle + (3.14/2)));
+				int deltaY = (int)(-6*sin(angle + (3.14/2)));
+
+				drawCircle(this->circleX,this->circleY,44,WHITE,1);
+				drawCircle(this->circleX,this->circleY,5,BLUE,1);
+
+				drawTriangle(x2, y2, (this->circleX+deltaX),(this->circleY+deltaY),(this->circleX-deltaX),(this->circleY-deltaY),BLUE, 1);
+				drawLine(this->circleX,this->circleY,x2,y2,RED);
+			}
+		}
+	}
+
+}
+
+#endif /* DIAL_H_ */

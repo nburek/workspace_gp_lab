@@ -7,15 +7,52 @@
 #include "xbasic_types.h"
 #include "xuartlite_l.h"
 #include "xparameters.h"
+/*
+template <class t>
 
+t thing(t vari, t vari2){
 
+	return vari * vari2;
+}
+
+class A{
+
+public:
+	virtual ~A(){};
+	void virtual r(){
+
+		ai = 10;
+	};
+	int ai;
+
+};
+
+class B: A{
+
+public:
+	B(): bi(20){}
+	~B(){};
+	void r(){
+
+		bi += 50;
+	}
+	int bi;
+
+};*/
 	int main()
 	{
 		int x = 0;
 		int y = 0;
 
+//		B b;
+//		b.r();
+
+		double d = 1;
+
+//		x = thing<int>(x);
+
 		//positions for the different components
-		int circleX = 80, circleY = 65;
+		int circleX = 80 , circleY = 65;
 		int progressBarX = 160, progressBarY = 85;
 		int lightsX = 160, lightsY = 35;
 
@@ -117,8 +154,8 @@
 			++counter;
 
 			delayCounter = 0;
-			while (delayCounter<999999)
-				delayCounter++;
+			//while (delayCounter<999999)
+			//	delayCounter++;
 		}
 
 	return 0;

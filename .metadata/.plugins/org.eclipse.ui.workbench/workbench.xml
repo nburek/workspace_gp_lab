@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="196" y="-22">
+<window height="768" maximized="true" width="1024" x="-369" y="-14">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -35,44 +35,27 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cc" partName="main.cc" path="C:/workspace_gp_lab/Widget_System/src/main.cc" title="main.cc" tooltip="Widget_System/src/main.cc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/main.cc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="330" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/workspace_gp_lab/WidgetCore2/src/main.c" title="main.c" tooltip="WidgetCore2/src/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1933" selectionTopPixel="743"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Widget.cpp" partName="Widget.cpp" path="C:/workspace_gp_lab/Widget_System/src/Widget.cpp" title="Widget.cpp" tooltip="Widget_System/src/Widget.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/Widget.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="215" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stringWid.h" partName="stringWid.h" path="C:/workspace_gp_lab/WidgetCore2/src/Widgets/stringWid.h" title="stringWid.h" tooltip="WidgetCore2/src/Widgets/stringWid.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/Widgets/stringWid.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="463" selectionTopPixel="243"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Widget.h" partName="Widget.h" path="C:/workspace_gp_lab/Widget_System/src/Widget.h" title="Widget.h" tooltip="Widget_System/src/Widget.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/Widget.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="121" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RoundMeter.h" partName="RoundMeter.h" path="C:/workspace_gp_lab/Widget_System/src/RoundMeter.h" title="RoundMeter.h" tooltip="Widget_System/src/RoundMeter.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/RoundMeter.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="1" selectionOffset="153" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RoundMeter.cpp" partName="RoundMeter.cpp" path="C:/workspace_gp_lab/Widget_System/src/RoundMeter.cpp" title="RoundMeter.cpp" tooltip="Widget_System/src/RoundMeter.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/RoundMeter.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="385" selectionOffset="326" selectionTopPixel="82"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.h" partName="Graphics.h" path="C:/workspace_gp_lab/Widget_System/src/Graphics.h" title="Graphics.h" tooltip="Widget_System/src/Graphics.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/Graphics.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="56" selectionOffset="580" selectionTopPixel="286"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.c" partName="Graphics.c" path="C:/workspace_gp_lab/Widget_System/src/Graphics.c" title="Graphics.c" tooltip="Widget_System/src/Graphics.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Widget_System/src/Graphics.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="widget_table.h" partName="widget_table.h" path="C:/workspace_gp_lab/WidgetCore2/src/WidgetCore/widget_table.h" title="widget_table.h" tooltip="WidgetCore2/src/WidgetCore/widget_table.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1711"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal 1">
 <viewState Title="Terminal 1" _keys_="Title,connectionManageractive,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagersize" connectionManageractive="connection0" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagersize="1"/>
 </view>
@@ -80,7 +63,18 @@
 <viewState/>
 </view>
 <view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="304" org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.priorityField="20" org.eclipse.ui.ide.resourceField="94"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
@@ -97,14 +91,13 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
-<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="295" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="461"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -116,7 +109,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -172,8 +165,7 @@
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.tm.terminal.view.TerminalView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -195,8 +187,8 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.16312057" ratioLeft="207" ratioRight="1062" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.69033235" ratioLeft="457" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.37030995" ratioLeft="227" ratioRight="386" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.6726862" ratioLeft="596" ratioRight="290" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -204,6 +196,7 @@
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -211,17 +204,15 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.7962038" ratioLeft="797" ratioRight="204" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -274,27 +265,18 @@
 <view id="com.xilinx.sdk.targetmanager.ui.XmdConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74887216" ratioLeft="498" ratioRight="167" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74887216" ratioLeft="498" ratioRight="167" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -302,8 +284,7 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -312,27 +293,21 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.4497992" ratioLeft="224" ratioRight="274" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" label="XMD Console"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
@@ -345,165 +320,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/main.cc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/Graphics.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/RoundMeter.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/RoundMeter.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/Graphics.c"/>
-<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\math.h" project="Widget_System"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Widget_System/Debug/src/main.d"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/Widget.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Widget_System/src/Widget.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/nothelloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/pbar.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/stringWid.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/dial.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/light.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/WidgetCore/wsystem.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/GraphicsEngine/Graphics.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/GraphicsEngine/Graphics.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Utilities/miniMath.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/WidgetCore/packet.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
 </editors>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="445" y="0"/>
-</item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="RoundMeter.h" index="2">
-<position info="not_deleted" x="241" y="0"/>
-</item>
-<item historyLabel="main.cc" index="0">
+<item historyLabel="dial.h" index="3">
 <position/>
 </item>
-<item historyLabel="math.h" index="5">
-<position info="not_deleted" x="1784" y="0"/>
+<item historyLabel="light.h" index="4">
+<position/>
 </item>
-<item historyLabel="main.cc" index="0">
-<position info="not_deleted" x="252" y="0"/>
+<item historyLabel="pbar.h" index="1">
+<position/>
 </item>
-<item historyLabel="Graphics.c" index="4">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="stringWid.h" index="2">
+<position/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="112" y="0"/>
+<item historyLabel="pbar.h" index="1">
+<position/>
 </item>
-<item historyLabel="RoundMeter.h" index="2">
+<item historyLabel="stringWid.h" index="2">
+<position/>
+</item>
+<item historyLabel="light.h" index="4">
+<position/>
+</item>
+<item historyLabel="dial.h" index="3">
+<position/>
+</item>
+<item historyLabel="nothelloworld.c" index="0">
+<position/>
+</item>
+<item historyLabel="stringWid.h" index="2">
+<position/>
+</item>
+<item historyLabel="nothelloworld.c" index="0">
+<position/>
+</item>
+<item historyLabel="dial.h" index="3">
+<position info="not_deleted" x="109" y="0"/>
+</item>
+<item historyLabel="light.h" index="4">
+<position info="not_deleted" x="210" y="0"/>
+</item>
+<item historyLabel="pbar.h" index="1">
+<position info="not_deleted" x="92" y="0"/>
+</item>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="dial.h" index="3">
+<position info="not_deleted" x="109" y="0"/>
+</item>
+<item historyLabel="wsystem.h" index="5">
 <position info="not_deleted" x="196" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="711" y="0"/>
+<item historyLabel="nothelloworld.c" index="0">
+<position/>
 </item>
-<item historyLabel="RoundMeter.h" index="2">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="Graphics.h" index="6">
+<position/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="165" y="0"/>
+<item historyLabel="wsystem.h" index="5">
+<position info="not_deleted" x="148" y="0"/>
 </item>
-<item historyLabel="RoundMeter.h" index="2">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="dial.h" index="3">
+<position info="not_deleted" x="231" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="736" y="0"/>
+<item historyLabel="light.h" index="4">
+<position info="not_deleted" x="199" y="0"/>
 </item>
-<item historyLabel="Graphics.h" index="1">
-<position info="not_deleted" x="317" y="0"/>
+<item historyLabel="pbar.h" index="1">
+<position info="not_deleted" x="73" y="0"/>
 </item>
-<item historyLabel="Graphics.c" index="4">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="224" y="0"/>
 </item>
-<item historyLabel="Graphics.h" index="1">
-<position info="not_deleted" x="364" y="0"/>
+<item historyLabel="Graphics.c" index="7">
+<position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="736" y="0"/>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="224" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="553" y="0"/>
+<item historyLabel="Graphics.h" index="6">
+<position/>
 </item>
-<item historyLabel="main.cc" index="0">
-<position info="not_deleted" x="274" y="0"/>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="290" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="711" y="0"/>
-</item>
-<item historyLabel="Graphics.h" index="1">
-<position info="not_deleted" x="364" y="0"/>
-</item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="417" y="0"/>
-</item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="450" y="33"/>
-</item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="410" y="37"/>
-</item>
-<item historyLabel="Graphics.h" index="1">
-<position info="not_deleted" x="580" y="56"/>
-</item>
-<item historyLabel="main.cc" index="0">
-<position info="not_deleted" x="596" y="0"/>
-</item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="709" y="0"/>
-</item>
-<item historyLabel="main.d" index="6">
+<item historyLabel="Graphics.h" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="628" y="0"/>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="290" y="0"/>
 </item>
-<item historyLabel="RoundMeter.h" index="2">
-<position info="not_deleted" x="153" y="1"/>
+<item historyLabel="miniMath.h" index="8">
+<position info="not_deleted" x="217" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="488" y="142"/>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="518" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="488" y="0"/>
+<item historyLabel="pbar.h" index="1">
+<position info="not_deleted" x="73" y="0"/>
 </item>
-<item historyLabel="Widget.h" index="7">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="light.h" index="4">
+<position info="not_deleted" x="199" y="0"/>
 </item>
-<item historyLabel="Widget.cpp" index="8">
-<position info="not_deleted" x="215" y="0"/>
+<item historyLabel="dial.h" index="3">
+<position info="not_deleted" x="231" y="0"/>
 </item>
-<item historyLabel="Widget.h" index="7">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="nothelloworld.c" index="0">
+<position/>
 </item>
-<item historyLabel="Graphics.c" index="4">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="nothelloworld.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.cc" index="0">
-<position info="not_deleted" x="602" y="0"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1567" y="0"/>
 </item>
-<item historyLabel="RoundMeter.h" index="2">
-<position info="not_deleted" x="153" y="1"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="765" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="459" y="0"/>
+<item historyLabel="stringWid.h" index="2">
+<position info="not_deleted" x="463" y="0"/>
 </item>
-<item historyLabel="Graphics.h" index="1">
-<position info="not_deleted" x="580" y="56"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="765" y="0"/>
 </item>
-<item historyLabel="Graphics.c" index="4">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1798" y="0"/>
 </item>
-<item historyLabel="Graphics.h" index="1">
-<position info="not_deleted" x="580" y="56"/>
+<item historyLabel="main.c" index="9">
+<position/>
 </item>
-<item historyLabel="RoundMeter.h" index="2">
-<position info="not_deleted" x="153" y="1"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1933" y="0"/>
 </item>
-<item historyLabel="Widget.h" index="7">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="packet.h" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Widget.cpp" index="8">
-<position info="not_deleted" x="215" y="0"/>
+<item historyLabel="widget_table.h" index="11">
+<position info="not_deleted" x="1529" y="0"/>
 </item>
-<item historyLabel="Widget.h" index="7">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1933" y="0"/>
 </item>
-<item historyLabel="main.cc" index="0">
-<position info="not_deleted" x="976" y="0"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="2022" y="0"/>
 </item>
-<item historyLabel="RoundMeter.cpp" index="3">
-<position info="not_deleted" x="326" y="385"/>
+<item historyLabel="widget_table.h" index="11">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="main.cc" index="0">
-<position info="not_deleted" x="976" y="0"/>
+<item active="true" historyLabel="main.c" index="9">
+<position info="not_deleted" x="2022" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -522,50 +500,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="main.d" tooltip="Widget_System/Debug/src/main.d">
-<persistable path="/Widget_System/Debug/src/main.d"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="widget_table.h" tooltip="WidgetCore2/src/WidgetCore/widget_table.h">
+<persistable path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\math.h">
-<persistable path="C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\math.h" project="Widget_System"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="packet.h" tooltip="WidgetCore2/src/WidgetCore/packet.h">
+<persistable path="/WidgetCore2/src/WidgetCore/packet.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.c" tooltip="Widget_System/src/Graphics.c">
-<persistable path="/Widget_System/src/Graphics.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stringWid.h" tooltip="WidgetCore2/src/Widgets/stringWid.h">
+<persistable path="/WidgetCore2/src/Widgets/stringWid.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.h" tooltip="Widget_System/src/Graphics.h">
-<persistable path="/Widget_System/src/Graphics.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="WidgetCore2/src/main.c">
+<persistable path="/WidgetCore2/src/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="subdir.mk" tooltip="Widget_System/Debug/src/subdir.mk">
-<persistable path="/Widget_System/Debug/src/subdir.mk"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nothelloworld.c" tooltip="WidgetCore2/src/nothelloworld.c">
+<persistable path="/WidgetCore2/src/nothelloworld.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="subdir.mk" tooltip="Widget_System/Debug/subdir.mk">
-<persistable path="/Widget_System/Debug/subdir.mk"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="miniMath.h" tooltip="WidgetCore2/src/Utilities/miniMath.h">
+<persistable path="/WidgetCore2/src/Utilities/miniMath.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="sources.mk" tooltip="Widget_System/Debug/sources.mk">
-<persistable path="/Widget_System/Debug/sources.mk"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.h" tooltip="WidgetCore2/src/GraphicsEngine/Graphics.h">
+<persistable path="/WidgetCore2/src/GraphicsEngine/Graphics.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="makefile" tooltip="Widget_System/Debug/makefile">
-<persistable path="/Widget_System/Debug/makefile"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.c" tooltip="WidgetCore2/src/GraphicsEngine/Graphics.c">
+<persistable path="/WidgetCore2/src/GraphicsEngine/Graphics.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="Widget_System_bsp/Makefile">
-<persistable path="/Widget_System_bsp/Makefile"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="wsystem.h" tooltip="WidgetCore2/src/WidgetCore/wsystem.h">
+<persistable path="/WidgetCore2/src/WidgetCore/wsystem.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="objects.mk" tooltip="Widget_System/Debug/objects.mk">
-<persistable path="/Widget_System/Debug/objects.mk"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pbar.h" tooltip="WidgetCore2/src/Widgets/pbar.h">
+<persistable path="/WidgetCore2/src/Widgets/pbar.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.cc" tooltip="Widget_System/src/Graphics.cc">
-<persistable path="/Widget_System/src/Graphics.cc"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="light.h" tooltip="WidgetCore2/src/Widgets/light.h">
+<persistable path="/WidgetCore2/src/Widgets/light.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.c" tooltip="Widget_System/Graphics.c">
-<persistable path="/Widget_System/Graphics.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dial.h" tooltip="WidgetCore2/src/Widgets/dial.h">
+<persistable path="/WidgetCore2/src/Widgets/dial.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_2/src/testperiph.c">
-<persistable path="/peripheral_tests_2/src/testperiph.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dial.c" tooltip="WidgetCore2/src/dial.c">
+<persistable path="/WidgetCore2/src/dial.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" tooltip="Widget_System_bsp/microblaze_0/include/xil_io.h">
-<persistable path="/Widget_System_bsp/microblaze_0/include/xil_io.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="wsystem.c" tooltip="WidgetCore2/src/wsystem.c">
+<persistable path="/WidgetCore2/src/wsystem.c"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h">
-<persistable path="C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h" project="Widget_System"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="miniMath.h" tooltip="WidgetCore2/src/miniMath.h">
+<persistable path="/WidgetCore2/src/miniMath.h"/>
 </file>
 </mruList>
 </workbench>

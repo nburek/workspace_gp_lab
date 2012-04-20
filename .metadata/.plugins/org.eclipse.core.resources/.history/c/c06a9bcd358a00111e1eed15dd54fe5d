@@ -1,0 +1,37 @@
+src/dial.d src/dial.o: ../src/dial.c ../src/widget.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xuartlite_l.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_types.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_assert.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_io.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/mb_interface.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xparameters.h \
+  ../src/packet.h ../src/dial.h ../src/Graphics.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_io.h
+
+../src/widget.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xuartlite_l.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_types.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_assert.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_io.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/mb_interface.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xparameters.h:
+
+../src/packet.h:
+
+../src/dial.h:
+
+../src/Graphics.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_io.h:

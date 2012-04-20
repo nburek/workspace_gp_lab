@@ -1,0 +1,91 @@
+
+#include "xbasic_types.h"
+#include "xuartlite_l.h"
+#include "xparameters.h"
+#include "widget.h"
+#include "widget_table.h"
+#include "packet.h"
+#include "Graphics.h"
+#include "Dial.h"
+//#include "pbar.h"
+
+void print(char *str);
+
+
+
+int main()
+{
+
+	int x = 0;
+		int y = 0;
+
+//		B b;
+//		b.r();
+
+
+//		x = thing<int>(x);
+
+		//positions for the different components
+
+		int lightsX = 160, lightsY = 35;
+
+		u32 counter = 0;
+
+		volatile int delayCounter = 0;
+
+		//white out the entire screen to start
+		for (x = 0; x<MAX_WIDTH; ++x){
+			for (y = 0; y<MAX_HEIGHT; ++y){
+				Xil_Out32(VGA_BASEADDR, ((y*384 + x)<<3)| (7));
+			}
+		}
+
+		struct widget dial = new(&DialWidget, 85, 65);
+//		struct widget pbar = PBar;
+		Packet p;
+
+		dial.runFunction(&dial, 1, &p);
+//		pbar.runFunction(&PBar.derive, 1, &p);
+
+		//Lights
+		int i;
+		for (i = 0; i<8; ++i)
+			drawCircle(lightsX+30*i,lightsY, 10, BLACK, 1);
+
+		//draw test digits 0-9
+		for (i = 0; i<10; ++i)
+			drawDigit(264+i*12,207,i,BLACK);
+
+		while (1)
+		{
+			//this is getting sent as a temporary handshake of sorts to request a byte
+			XUartLite_SendByte(XPAR_UARTLITE_1_BASEADDR, 128);
+
+			p.bytes[0] = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);;
+			dial.runFunction(&dial, 2, &p);
+
+			p.bytes[0] = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);;
+	//		pbar.runFunction(&PBar.derive, 2, &p);
+
+			//stuff to draw some lights here
+			u8 buttons;
+			buttons = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);
+			for (i = 0; i<8; ++i)
+			{
+				if ((buttons & (0x01<<i)) > 0)
+					drawCircle(lightsX+30*i,lightsY,8,RED,1);
+				else
+					drawCircle(lightsX+30*i,lightsY,8,WHITE,1);
+			}
+
+			drawNumber(4, 207,counter, CYAN);
+			++counter;
+
+			delayCounter = 0;
+			while (delayCounter<999999)
+				delayCounter++;
+		}
+
+
+    return 0;
+}

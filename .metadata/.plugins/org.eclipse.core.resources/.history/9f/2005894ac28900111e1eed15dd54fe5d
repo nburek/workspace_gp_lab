@@ -1,0 +1,53 @@
+/*
+ * stringWid.h
+ *
+ *  Created on: Apr 18, 2012
+ *      Author: ACM
+ */
+
+#ifndef STRINGWID_H_
+#define STRINGWID_H_
+
+#include<stdlib.h>
+#include "widget.h"
+#include "Graphics.h"
+
+Packet STR_runFunction(Widget* wthis, u8 funcN, Packet* pack);
+
+typedef struct led_widget {
+	u8 chars[8];
+	u8 size;
+} STRWidget;
+
+struct widget new_STRWidget(u32 x_i, u32 y_i, u16 radius_i, u8 color_i){
+
+	STRWidget* w = (STRWidget*) malloc(sizeof(STRWidget));
+
+	Widget stringW ={
+			.x = x_i,
+			.y = y_i,
+			.derive = (const void*)w,
+			.runFunction = STR_runFunction
+	};
+
+	return stringW;
+}
+
+
+Packet STR_runFunction(Widget* base, u8 funcN, Packet* pack){
+
+	STRWidget* derive = (STRWidget*)(base->derive);
+
+	switch(funcN){
+
+		case 1:{
+
+		}
+		case 2:{
+
+		}
+	}
+}
+
+
+#endif /* STRINGWID_H_ */

@@ -1,0 +1,90 @@
+/*
+ * dial.h
+ *
+ *  Created on: Apr 18, 2012
+ *      Author: ACM
+ */
+
+#ifndef DIAL_H_
+#define DIAL_H_
+
+#include<stdlib.h>
+#include "widget.h"
+#include "Graphics.h"
+
+extern Packet DIAL_runFunction(Widget* wthis, u8 funcN, Packet* pack);
+extern Widget new_DialWidget(u32 circle_x, u32 circle_y);
+
+typedef struct dial_widget {
+	u32 circleX, circleY;
+} DialWidget;
+
+
+Widget new_DialWidget(u32 circle_x, u32 circle_y){
+
+	DialWidget* w = (DialWidget*) malloc(sizeof(DialWidget));
+	w->circleX = circle_x;
+	w->circleY = circle_y;
+
+	Widget Dial ={
+			.x = 0,
+			.y = 0,
+			.derive = (const void*)w,
+			.runFunction = DIAL_runFunction
+	};
+
+	return Dial;
+}
+
+
+Packet DIAL_runFunction(Widget* base, u8 funcN, Packet* pack){
+
+	DialWidget* derive = (DialWidget*)(base->derive);
+
+	switch(funcN){
+
+		case 1:{
+
+			//stuff to draw the shell of the round meter
+			drawCircle(derive->circleX,derive->circleY,50,BLACK,1);
+			drawCircle(derive->circleX,derive->circleY,48,WHITE,1);
+			float fi = 0;
+			for(fi = 0; fi <= 6.2831853; fi += (3.14159269/12)){
+				drawLine(derive->circleX,derive->circleY,(int)(derive->circleX+48*cos(fi)),(int)(derive->circleY+48*sin(fi)),BLACK);
+			}
+			drawDigit(derive->circleX+52,derive->circleY-4,0,BLACK);
+			drawNumber(derive->circleX-75,derive->circleY-4,180,BLACK);
+			drawNumber(derive->circleX-8,derive->circleY-59,90,BLACK);
+			drawNumber(derive->circleX-12,derive->circleY+52,270,BLACK);
+		}
+		case 2:{
+
+			//stuff to draw a round meter
+			u8 degree = 0;
+			u8 oldDegree = degree;
+
+			degree = pack->bytes[0];
+
+			if(oldDegree != degree)
+			{
+				double angle = ((double)degree) * 3.14159/180.0;
+				//print("Starting to draw RoundMeter.");
+				int x2 = (int)(43*cos(angle) + derive->circleX);
+				//int y2 = y + 45*( angle - (angle*angle*angle)/6.0 + (angle*angle*angle*angle*angle)/120.0 - (angle*angle*angle*angle*angle*angle*angle)/5040);
+				int y2 = (int)(-43*sin(angle) + derive->circleY);
+
+				int deltaX = (int)(6*cos(angle + (3.14/2)));
+				int deltaY = (int)(-6*sin(angle + (3.14/2)));
+
+				drawCircle(derive->circleX,derive->circleY,44,WHITE,1);
+				drawCircle(derive->circleX,derive->circleY,5,BLUE,1);
+
+				drawTriangle(x2, y2, (derive->circleX+deltaX),(derive->circleY+deltaY),(derive->circleX-deltaX),(derive->circleY-deltaY),BLUE, 1);
+				drawLine(derive->circleX,derive->circleY,x2,y2,RED);
+			}
+		}
+	}
+
+}
+
+#endif /* DIAL_H_ */

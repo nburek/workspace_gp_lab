@@ -1,0 +1,39 @@
+src/nothelloworld.d src/nothelloworld.o: ../src/nothelloworld.c \
+  ../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xuartlite_l.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_types.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_assert.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_io.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/mb_interface.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xparameters.h \
+  ../src/widget.h ../src/packet.h ../src/widget_table.h ../src/Graphics.h \
+  ../../WidgetCore2_bsp/microblaze_0/include/xil_io.h ../src/Dial.h
+
+../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xuartlite_l.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_types.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_assert.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_io.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/mb_interface.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xbasic_types.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xparameters.h:
+
+../src/widget.h:
+
+../src/packet.h:
+
+../src/widget_table.h:
+
+../src/Graphics.h:
+
+../../WidgetCore2_bsp/microblaze_0/include/xil_io.h:
+
+../src/Dial.h:

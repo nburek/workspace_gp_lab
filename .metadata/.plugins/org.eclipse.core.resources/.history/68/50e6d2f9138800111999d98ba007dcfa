@@ -1,0 +1,29 @@
+#ifndef ___WIDGET___
+#define ___WIDGET___
+
+#include "xbasic_types.h"
+#include "xuartlite_l.h"
+#include "xparameters.h"
+
+struct widget{
+	u16 x, y;
+	void (*render) (struct widget* this);
+	void (*move) (struct widget* this, u16 x_s, u16 y_s);
+}Widget ={
+	.x = 0,
+	.y = 0
+	.move = Widget_move
+};
+
+void Widget_move(struct widget* this, u16 x_s, u16 y_s){
+	this->x = x_s;
+	this->y = y_s;
+}
+
+void Widget_ctor(struct widget* this){
+
+	this->move = &Widget_move;
+}
+
+
+#endif

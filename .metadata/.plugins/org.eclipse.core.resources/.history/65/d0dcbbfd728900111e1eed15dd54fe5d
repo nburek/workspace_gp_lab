@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/Graphics.c \
+../src/dial.c \
+../src/nothelloworld.c 
+
+LD_SRCS += \
+../src/lscript.ld 
+
+OBJS += \
+./src/Graphics.o \
+./src/dial.o \
+./src/nothelloworld.o 
+
+C_DEPS += \
+./src/Graphics.d \
+./src/dial.d \
+./src/nothelloworld.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/%.o: ../src/%.c
+	@echo Building file: $<
+	@echo Invoking: MicroBlaze gcc compiler
+	mb-gcc -Wall -Os -c -fmessage-length=0 -I../../WidgetCore2_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo Finished building: $<
+	@echo ' '
+
+

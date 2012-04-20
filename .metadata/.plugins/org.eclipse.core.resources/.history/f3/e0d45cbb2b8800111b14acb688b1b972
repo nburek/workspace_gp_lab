@@ -1,0 +1,20 @@
+#ifndef ___OUTPACK___
+#define ___OUTPACK___
+
+#include "xbasic_types.h"
+#include "xuartlite_l.h"
+#include "xparameters.h"
+/////////////////////////////////////
+//
+//Description: handler for the byte array to clean up memory management
+//
+//
+/////////////////////////////////////
+typedef struct packet{
+
+	u8* bytes;
+	u8 size;
+
+} Packet;
+
+#endif

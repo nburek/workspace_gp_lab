@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;WidgetCore2/src/helloworld.c&apos; to &apos;nothelloworld.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="nothelloworld.c" stamp="1334625555971" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;WidgetCore2/src/nothelloworld.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;nothelloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/nothelloworld.c" name="main.c" stamp="1334852072714" updateReferences="true"/>
+</session>

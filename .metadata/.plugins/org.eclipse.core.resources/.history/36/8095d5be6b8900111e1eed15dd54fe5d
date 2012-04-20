@@ -1,0 +1,37 @@
+/*
+ * dial.h
+ *
+ *  Created on: Apr 18, 2012
+ *      Author: ACM
+ */
+
+#ifndef DIAL_H_
+#define DIAL_H_
+
+#include "widget.h"
+
+
+Packet DIAL_runFunction(struct widget* this, u8 funcN, Packet* pack){
+
+	struct dial_widget {
+
+		//stuff to draw the shell of the round meter
+		drawCircle(circleX,circleY,50,BLACK,1);
+		drawCircle(circleX,circleY,48,WHITE,1);
+		float fi = 0;
+		for(fi = 0; fi <= 6.2831853; fi += (3.14159269/12)){
+			drawLine(circleX,circleY,(int)(circleX+48*cos(fi)),(int)(circleY+48*sin(fi)),BLACK);
+		}
+		drawDigit(circleX+52,circleY-4,0,BLACK);
+		drawNumber(circleX-75,circleY-4,180,BLACK);
+		drawNumber(circleX-8,circleY-59,90,BLACK);
+		drawNumber(circleX-12,circleY+52,270,BLACK);
+
+	};
+
+}
+
+
+
+
+#endif /* DIAL_H_ */

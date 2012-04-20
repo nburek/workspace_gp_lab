@@ -1,0 +1,106 @@
+/*
+ * widget_table.h
+ *
+ *  Created on: Apr 16, 2012
+ *      Author: ACM
+ */
+
+#ifndef ___WIDGETTABLE___
+#define ___WIDGETTABLE___
+
+#include"widget.h"
+
+#include "xbasic_types.h"
+#include "xuartlite_l.h"
+#include "xparameters.h"
+
+#include"widget_table.h"
+
+#define NWIDGETS 256
+#define CLUSTER_S 16
+#define FILLED_CLUSTER 65535
+#define BIGBIT 32768
+
+u8 wt_isFull();
+s16 wt_free_loc();
+s16 wt_insert(struct widget* new_wid);
+void wt_remove(u8 loc);
+
+struct widget_table{
+
+	u8 size;			//number of widgets allocated
+	u16 bitmap[NWIDGETS / CLUSTER_S];
+
+	u8 (*isFull) ();
+	s16 (*free_loc)();
+	s16 (*insert)(struct widget* new_wid);
+	void (*remove)(u8 loc);
+
+	struct widget table[NWIDGETS];
+
+
+}WidgetTable = {
+	.size = 0,
+	.isFull = wt_isFull,
+	.free_loc = wt_free_loc,
+	.insert = wt_insert,
+	.remove = wt_remove
+};
+
+u8 wt_isFull(){
+	return WidgetTable.size == (NWIDGETS - 1) ? 1 : 0;
+}
+//returns location and true if found,  if not returns proper parent location and false
+//loc = 0 is a standard call
+s16 wt_free_loc(){
+	u32 i;
+	u16 clusters = (NWIDGETS > CLUSTER_S)? ((int)((float)NWIDGETS / (float)CLUSTER_S)) + 1 : 1;
+	s16 free = -1;
+
+	for(i = 0; i < clusters; ++i){
+		if(WidgetTable.bitmap[i] == 0){
+			return (i * CLUSTER_S);
+		}else if(WidgetTable.bitmap[i] != FILLED_CLUSTER){
+			free = i;
+		}
+	}
+
+	if(free != -1){
+		for(i = 0; i < CLUSTER_S; ++i){
+
+			if(((WidgetTable.bitmap[free] >> (CLUSTER_S - 1 - i)) & 0x0001) == 0){
+				return (free*CLUSTER_S + i);
+			}
+		}
+	}
+
+	return -1;
+}
+
+s16 wt_insert(struct widget* new_wid){
+	s16 free_loc = wt_free_loc();
+
+	if(free_loc != -1){
+		u8 cluster = free_loc / CLUSTER_S;
+		u8 bit = free_loc - cluster * CLUSTER_S;
+
+		WidgetTable.bitmap[cluster] |= (BIGBIT >> bit);
+		WidgetTable.table[free_loc] = *new_wid;
+		WidgetTable.size++;
+	}
+
+	return -1; //failed
+}
+
+void wt_remove(u8 loc){
+
+	u8 cluster = loc / CLUSTER_S;
+	u8 bit = loc - cluster * CLUSTER_S;
+
+	WidgetTable.table[loc] = Widget;
+	WidgetTable.bitmap[cluster] ^= (BIGBIT >> bit);
+
+	WidgetTable.size--;
+}
+
+#endif
