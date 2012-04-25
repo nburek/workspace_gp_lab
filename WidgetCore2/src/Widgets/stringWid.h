@@ -58,6 +58,7 @@ Packet STR_runFunction(Widget* base, u8 funcN, Packet* pack){
 				}
 			}
 		}
+		break;
 	}
 }
 

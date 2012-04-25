@@ -45,12 +45,20 @@ Packet LED_runFunction(Widget* base, u8 funcN, Packet* pack){
 		case 1:{
 			drawCircle(base->x, base->y, derive->radius, BLACK, 1);
 		}
+		break;
 		case 2:{
 			if (pack->bytes[0] > 0)
 				drawCircle(base->x, base->y, derive->radius - (derive->radius/5), derive->color, 1);
 			else
 				drawCircle(base->x, base->y, derive->radius - (derive->radius/5), WHITE, 1);
 		}
+		break;
+		case 3:{
+			Packet r;
+			r.bytes[0] = 0;
+			return r;
+		}
+		break;
 	}
 
 }

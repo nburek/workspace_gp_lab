@@ -48,6 +48,7 @@ Packet PBAR_runFunction(Widget* base, u8 funcN, Packet* pack){
 			drawDigit(base->x-4,base->y+17,0,BLACK);
 			drawNumber(base->x+188,base->y+17,100,BLACK);
 		}
+		break;
 		case 2:{
 			//stuff to draw a progress bar here
 			u8 temperature = 0;
@@ -63,6 +64,7 @@ Packet PBAR_runFunction(Widget* base, u8 funcN, Packet* pack){
 					drawCircle(base->x+200,base->y,13,GREEN,1);
 			}
 		}
+		break;
 	}
 
 }

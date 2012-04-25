@@ -12,7 +12,7 @@
 ////////////////////////////////////////////
 typedef struct packet{
 
-	u8 bytes[8];
+	u8 bytes[16];
 	u8 size;
 
 } Packet;

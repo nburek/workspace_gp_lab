@@ -1,0 +1,50 @@
+/*
+ * light_row.h
+ *
+ *  Created on: Apr 22, 2012
+ *      Author: ACM
+ */
+
+#ifndef LIGHT_ROW_H_
+#define LIGHT_ROW_H_
+
+#include<stdlib.h>
+#include "../WidgetCore/widget.h"
+#include "../GraphicsEngine/Graphics.h"
+
+Packet PBAR_runFunction(Widget* this, u8 funcN, Packet* pack);
+
+typedef struct pbar_widget{
+	u32 percent;
+	u16 width;
+}LRowWidget;
+
+struct widget new_PBarWidget(u32 xi, u32 yi){
+
+	LRowWidget* w = (LRowWidget*) malloc(sizeof(LRowWidget));
+
+	struct widget PBar = {
+			.x = progressBar_x,
+			.y = progressBar_y,
+			.derive = (const void*)w,
+			.runFunction = PBAR_runFunction
+	};
+
+	return PBar;
+}
+
+Packet PBAR_runFunction(Widget* base, u8 funcN, Packet* pack){
+
+	LRowWidget* derive = (LRowWidget*)(base->derive);
+
+	switch(funcN){
+
+		case 1:{
+		}
+		break;
+		case 2:{
+		}
+		break;
+	}
+
+#endif /* LIGHT_ROW_H_ */

@@ -25,6 +25,7 @@ src/main.d src/main.o: ../src/main.c \
   ../src/Widgets/Dial.h ../src/Widgets/../WidgetCore/widget.h \
   ../src/Widgets/../WidgetCore/packet.h \
   ../src/Widgets/../GraphicsEngine/Graphics.h ../src/Widgets/pbar.h \
+  ../src/Widgets/light.h ../src/Widgets/light_row.h \
   ../src/Widgets/light.h ../src/Widgets/stringWID.h \
   ../src/GraphicsEngine/Graphics.h
 
@@ -87,6 +88,10 @@ src/main.d src/main.o: ../src/main.c \
 ../src/Widgets/../GraphicsEngine/Graphics.h:
 
 ../src/Widgets/pbar.h:
+
+../src/Widgets/light.h:
+
+../src/Widgets/light_row.h:
 
 ../src/Widgets/light.h:
 

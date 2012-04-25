@@ -9,6 +9,7 @@
 #include "Widgets/Dial.h"
 #include "Widgets/pbar.h"
 #include "Widgets/light.h"
+#include "Widgets/light_row.h"
 #include "Widgets/stringWID.h"
 #include "GraphicsEngine/Graphics.h"
 
@@ -25,7 +26,7 @@ int main()
 
 		WidgetTable.insert(new_DialWidget(85, 65));
 		s16 loc  = WidgetTable.insert(new_PBarWidget(160, 85));
-		s16 loc2 = WidgetTable.insert(new_LEDWidget(190, 35, 10, RED));
+		s16 loc2 = WidgetTable.insert(new_LRowWidget(190, 35));
 		s16 loc3 = WidgetTable.insert(new_STRWidget(100, 200, "THOMAS1", 7, BLACK));
 
 		WidgetTable.runFunctionFor(0, 1, &p);
@@ -53,18 +54,31 @@ int main()
 			p.bytes[0] = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);;
 			WidgetTable.runFunctionFor(loc, 2, &p);
 
-			p.bytes[0] = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR) & 0x01;
+			int lights = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);
+			p.bytes[0] = lights & 0x01;
+			p.bytes[1] = lights & 0x02;
+			p.bytes[2] = lights & 0x04;
+			p.bytes[3] = lights & 0x08;
+			p.bytes[4] = lights & 0x10;
+			p.bytes[5] = lights & 0x20;
+			p.bytes[6] = lights & 0x40;
+			p.bytes[7] = lights & 0x80;
+
+			drawRectangle(200, 200, 224, 208, WHITE, 1);
+			drawNumber(200, 200, lights & 0xFF, RED);
+
 			WidgetTable.runFunctionFor(loc2, 2, &p);
 
 			WidgetTable.runFunctionFor(loc3, 1, &p);
 
-			if(!WidgetTable.isFull() || x >= MAX_WIDTH){
-				s16 loc4 = WidgetTable.insert(new_STRWidget(x, y, "THOMAS", 7, BLACK));
+			Packet q = WidgetTable.runFunctionFor(loc2, 3, &p);
+			if((!WidgetTable.isFull() || x >= MAX_WIDTH) && (q.bytes[0] == 1)){
+				s16 loc4 = WidgetTable.insert(new_STRWidget(x, y, "THOMAS GRIEBEL", 14, CYAN));
 				WidgetTable.runFunctionFor(loc4, 1, &p);
 				y += 8;
 				if(y >= (MAX_HEIGHT)){
 					y = 0;
-					x += 48;
+					x += 112;
 				}
 				WidgetTable.remove(loc4);
 			}

@@ -57,6 +57,7 @@ Packet DIAL_runFunction(Widget* base, u8 funcN, Packet* pack){
 			drawNumber(base->x-8,base->y-59,90,BLACK);
 			drawNumber(base->x-12,base->y+52,270,BLACK);
 		}
+		break;
 		case 2:{
 
 			//stuff to draw a round meter
@@ -83,6 +84,7 @@ Packet DIAL_runFunction(Widget* base, u8 funcN, Packet* pack){
 				drawLine(base->x,base->y,x2,y2,RED);
 			}
 		}
+		break;
 	}
 }
 
