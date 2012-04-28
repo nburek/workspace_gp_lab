@@ -14136,3 +14136,56 @@ Done writing filter settings to:
 	C:\workspace_gp_lab\GP_LAB_EDK\etc\system.filters
 Done writing Tab View settings to:
 	C:\workspace_gp_lab\GP_LAB_EDK\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 13.4 Build EDK_O.87xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver tft 3.00.a for instance xps_tft_0
+xps_tft_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_DCR_SPLB_SLAVE_IF - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_TFT_INTERFACE - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_I2C_SLAVE_ADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_DEFAULT_TFT_BASE_ADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_SPLB_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_SPLB_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_tft_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_DCR_SPLB_SLAVE_IF - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_TFT_INTERFACE - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_I2C_SLAVE_ADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_DEFAULT_TFT_BASE_ADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_SPLB_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_tft, INSTANCE: xps_tft_0, PARAMETER: C_SPLB_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_tft_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+xps_tft_0 has been deleted from the project
+Assigned Driver spi 3.03.a for instance axi_spi_0
+axi_spi_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: axi_spi, INSTANCE: axi_spi_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_spi, INSTANCE: axi_spi_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral axi_spi_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00007fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) Push_Buttons_4Bits	axi4lite_0
+  (0x40020000-0x4002ffff) LEDs_8Bits	axi4lite_0
+  (0x40040000-0x4004ffff) DIP_Switches_8Bits	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40a00000-0x40a0ffff) axi_spi_0	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x7c600000-0x7c60ffff) vga_0	axi4lite_0
+  (0x7d600000-0x7d60ffff) Digilent_SevSeg_Disp	axi4lite_0
+INFO:EDK - Use Push_Buttons_4Bits as reference
+INFO:EDK - Connect bus interface S_AXI to axi4lite_0
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: axi_spi_0
+axi_spi_0 has been deleted from the project
+Writing filter settings....
+Done writing filter settings to:
+	C:\workspace_gp_lab\GP_LAB_EDK\etc\system.filters
+Done writing Tab View settings to:
+	C:\workspace_gp_lab\GP_LAB_EDK\etc\system.gui
+Writing filter settings....
+Done writing filter settings to:
+	C:\workspace_gp_lab\GP_LAB_EDK\etc\system.filters
+Done writing Tab View settings to:
+	C:\workspace_gp_lab\GP_LAB_EDK\etc\system.gui

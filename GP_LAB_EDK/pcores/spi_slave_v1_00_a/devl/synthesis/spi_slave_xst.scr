@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\workspace_gp_lab\GP_LAB_EDK\pcores\spi_slave_v1_00_a\devl\synthesis\spi_slave_xst.prj"
+-top spi_slave
+-p virtex6
+-ofn "C:\workspace_gp_lab\GP_LAB_EDK\pcores\spi_slave_v1_00_a\devl\synthesis\spi_slave_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib spi_slave_v1_00_a
