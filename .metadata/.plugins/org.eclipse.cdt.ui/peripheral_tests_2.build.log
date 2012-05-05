@@ -2,4 +2,13 @@
 **** Build of configuration Debug for project peripheral_tests_2 ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../peripheral_tests_bsp_2/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:89: error: 'XPAR_DIGILENT_SEVSEG_DISP_BASEADDR' undeclared (first use in this function)
+../src/testperiph.c:89: error: (Each undeclared identifier is reported only once
+../src/testperiph.c:89: error: for each function it appears in.)
+../src/testperiph.c:95: warning: unused variable 'color'
+../src/testperiph.c:189:4: warning: "/*" within comment
+make: *** [src/testperiph.o] Error 1

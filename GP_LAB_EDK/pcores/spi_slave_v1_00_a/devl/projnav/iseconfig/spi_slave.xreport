@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-04-27T13:45:21</DateModified>
+  <DateModified>2012-04-30T13:42:52</DateModified>
   <ModuleName>spi_slave</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/devl/projnav/iseconfig/spi_slave.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/devl/projnav</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2012-04-27T13:45:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

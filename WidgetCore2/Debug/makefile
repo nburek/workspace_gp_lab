@@ -41,7 +41,7 @@ all: WidgetCore2.elf secondary-outputs
 WidgetCore2.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo Building target: $@
 	@echo Invoking: MicroBlaze gcc linker
-	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../WidgetCore2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"WidgetCore2.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"WidgetCore2.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo Finished building target: $@
 	@echo ' '
 

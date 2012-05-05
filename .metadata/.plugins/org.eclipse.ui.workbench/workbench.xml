@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="14" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="-369" y="-14">
+<window height="994" maximized="true" width="640" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -35,21 +35,41 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/workspace_gp_lab/WidgetCore2/src/main.c" title="main.c" tooltip="WidgetCore2/src/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/workspace_gp_lab/WidgetCore2/src/main.c" title="main.c" tooltip="WidgetCore2/src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2020" selectionTopPixel="946"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="410" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="widget_table.h" partName="widget_table.h" path="C:/workspace_gp_lab/WidgetCore2/src/WidgetCore/widget_table.h" title="widget_table.h" tooltip="WidgetCore2/src/WidgetCore/widget_table.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="282" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.c" partName="Graphics.c" path="C:/workspace_gp_lab/WidgetCore2/src/GraphicsEngine/Graphics.c" title="Graphics.c" tooltip="WidgetCore2/src/GraphicsEngine/Graphics.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/GraphicsEngine/Graphics.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="55" selectionOffset="267" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.h" partName="Graphics.h" path="C:/workspace_gp_lab/WidgetCore2/src/GraphicsEngine/Graphics.h" title="Graphics.h" tooltip="WidgetCore2/src/GraphicsEngine/Graphics.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/GraphicsEngine/Graphics.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="451" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="319" selectionTopPixel="32"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/workspace_gp_lab/WidgetCore2_bsp/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="WidgetCore2_bsp/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2_bsp/microblaze_0/include/xparameters.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="5350" selectionTopPixel="2040"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" partName="xil_io.h" path="C:/workspace_gp_lab/WidgetCore2_bsp/microblaze_0/include/xil_io.h" title="xil_io.h" tooltip="WidgetCore2_bsp/microblaze_0/include/xil_io.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2_bsp/microblaze_0/include/xil_io.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="5459" selectionTopPixel="2142"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="interpreter.h" partName="interpreter.h" path="C:/workspace_gp_lab/WidgetCore2/src/interpreter.h" title="interpreter.h" tooltip="WidgetCore2/src/interpreter.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/interpreter.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3488" selectionTopPixel="1711"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="widget.h" partName="widget.h" path="C:/workspace_gp_lab/WidgetCore2/src/WidgetCore/widget.h" title="widget.h" tooltip="WidgetCore2/src/WidgetCore/widget.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WidgetCore2/src/WidgetCore/widget.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="50" selectionOffset="398" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -94,7 +114,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (8 items)"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="295" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="461"/>
@@ -187,7 +206,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.32626426" ratioLeft="200" ratioRight="413" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.17730497" ratioLeft="225" ratioRight="1044" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.6726862" ratioLeft="596" ratioRight="290" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -321,40 +340,165 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/interpreter.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/interpreter.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/WidgetCore/widget.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/GraphicsEngine/Graphics.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/GraphicsEngine/Graphics.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/light.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/dial.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/light_row.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/pbar.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WidgetCore2/src/Widgets/stringWid.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_2/src/testperiph.c"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1826" y="0"/>
+<item historyLabel="light.h" index="4">
+<position/>
 </item>
-<item historyLabel="widget.h" index="1">
+<item historyLabel="dial.h" index="5">
+<position/>
+</item>
+<item historyLabel="light.h" index="4">
+<position/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="1971" y="0"/>
+</item>
+<item historyLabel="dial.h" index="5">
+<position/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="1971" y="0"/>
+</item>
+<item historyLabel="light_row.h" index="6">
+<position/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="1971" y="0"/>
+</item>
+<item historyLabel="light.h" index="4">
+<position/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="1971" y="0"/>
+</item>
+<item historyLabel="pbar.h" index="7">
+<position/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="1971" y="0"/>
+</item>
+<item historyLabel="stringWid.h" index="8">
+<position/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="1741" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="531" y="0"/>
+</item>
+<item historyLabel="light.h" index="4">
 <position/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1826" y="0"/>
+<position info="not_deleted" x="410" y="0"/>
 </item>
-<item historyLabel="widget_table.h" index="2">
-<position info="not_deleted" x="282" y="0"/>
-</item>
-<item historyLabel="Graphics.c" index="3">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="widget_table.h" index="2">
-<position info="not_deleted" x="282" y="0"/>
-</item>
-<item historyLabel="Graphics.h" index="4">
-<position info="not_deleted" x="451" y="0"/>
+<item historyLabel="light_row.h" index="6">
+<position/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2125" y="0"/>
+<position info="not_deleted" x="531" y="0"/>
 </item>
-<item historyLabel="widget.h" index="1">
-<position info="not_deleted" x="341" y="0"/>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="816" y="24"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="2125" y="0"/>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="748" y="0"/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="widget.h" index="3">
+<position info="not_deleted" x="398" y="50"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position info="not_deleted" x="762" y="0"/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="554" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1" y="384"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="2182" y="0"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position info="not_deleted" x="1591" y="0"/>
+</item>
+<item historyLabel="interpreter.c" index="1">
+<position info="not_deleted" x="2182" y="0"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1" y="384"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="410" y="0"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position/>
+</item>
+<item historyLabel="dial.h" index="5">
+<position info="not_deleted" x="810" y="0"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position/>
+</item>
+<item historyLabel="light_row.h" index="6">
+<position/>
+</item>
+<item historyLabel="light.h" index="4">
+<position info="not_deleted" x="531" y="0"/>
+</item>
+<item historyLabel="pbar.h" index="7">
+<position info="not_deleted" x="940" y="0"/>
+</item>
+<item historyLabel="stringWid.h" index="8">
+<position info="not_deleted" x="989" y="0"/>
+</item>
+<item historyLabel="pbar.h" index="7">
+<position info="not_deleted" x="940" y="0"/>
+</item>
+<item historyLabel="light.h" index="4">
+<position info="not_deleted" x="531" y="0"/>
+</item>
+<item historyLabel="light_row.h" index="6">
+<position/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position/>
+</item>
+<item historyLabel="light_row.h" index="6">
+<position info="not_deleted" x="768" y="0"/>
+</item>
+<item historyLabel="interpreter.h" index="2">
+<position/>
+</item>
+<item historyLabel="testperiph.c" index="9">
+<position info="not_deleted" x="2652" y="0"/>
+</item>
+<item active="true" historyLabel="interpreter.h" index="2">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -373,50 +517,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_2/src/testperiph.c">
+<persistable path="/peripheral_tests_2/src/testperiph.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="light_row.h" tooltip="WidgetCore2/src/Widgets/light_row.h">
+<persistable path="/WidgetCore2/src/Widgets/light_row.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stringWid.h" tooltip="WidgetCore2/src/Widgets/stringWid.h">
+<persistable path="/WidgetCore2/src/Widgets/stringWid.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pbar.h" tooltip="WidgetCore2/src/Widgets/pbar.h">
+<persistable path="/WidgetCore2/src/Widgets/pbar.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="light.h" tooltip="WidgetCore2/src/Widgets/light.h">
+<persistable path="/WidgetCore2/src/Widgets/light.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dial.h" tooltip="WidgetCore2/src/Widgets/dial.h">
+<persistable path="/WidgetCore2/src/Widgets/dial.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="widget.h" tooltip="WidgetCore2/src/WidgetCore/widget.h">
 <persistable path="/WidgetCore2/src/WidgetCore/widget.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="widget_table.h" tooltip="WidgetCore2/src/WidgetCore/widget_table.h">
+<persistable path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="interpreter.h" tooltip="WidgetCore2/src/interpreter.h">
+<persistable path="/WidgetCore2/src/interpreter.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="interpreter.c" tooltip="WidgetCore2/src/interpreter.c">
+<persistable path="/WidgetCore2/src/interpreter.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="standalone_bsp_0/system.mss">
+<persistable path="/standalone_bsp_0/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" tooltip="WidgetCore2_bsp/microblaze_0/include/xil_io.h">
+<persistable path="/WidgetCore2_bsp/microblaze_0/include/xil_io.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="WidgetCore2_bsp/microblaze_0/include/xparameters.h">
+<persistable path="/WidgetCore2_bsp/microblaze_0/include/xparameters.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.h" tooltip="WidgetCore2/src/GraphicsEngine/Graphics.h">
 <persistable path="/WidgetCore2/src/GraphicsEngine/Graphics.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Graphics.c" tooltip="WidgetCore2/src/GraphicsEngine/Graphics.c">
 <persistable path="/WidgetCore2/src/GraphicsEngine/Graphics.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="widget_table.h" tooltip="WidgetCore2/src/WidgetCore/widget_table.h">
-<persistable path="/WidgetCore2/src/WidgetCore/widget_table.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="WidgetCore2/src/main.c">
-<persistable path="/WidgetCore2/src/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="text_box.h" tooltip="WidgetCore2/src/Widgets/text_box.h">
-<persistable path="/WidgetCore2/src/Widgets/text_box.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="packet.h" tooltip="WidgetCore2/src/WidgetCore/packet.h">
-<persistable path="/WidgetCore2/src/WidgetCore/packet.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="light_row.h" tooltip="WidgetCore2/src/Widgets/light_row.h">
-<persistable path="/WidgetCore2/src/Widgets/light_row.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pbar.h" tooltip="WidgetCore2/src/Widgets/pbar.h">
-<persistable path="/WidgetCore2/src/Widgets/pbar.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dial.h" tooltip="WidgetCore2/src/Widgets/dial.h">
-<persistable path="/WidgetCore2/src/Widgets/dial.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="light.h" tooltip="WidgetCore2/src/Widgets/light.h">
-<persistable path="/WidgetCore2/src/Widgets/light.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stringWid.h" tooltip="WidgetCore2/src/Widgets/stringWid.h">
-<persistable path="/WidgetCore2/src/Widgets/stringWid.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nothelloworld.c" tooltip="WidgetCore2/src/nothelloworld.c">
-<persistable path="/WidgetCore2/src/nothelloworld.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="miniMath.h" tooltip="WidgetCore2/src/Utilities/miniMath.h">
-<persistable path="/WidgetCore2/src/Utilities/miniMath.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="wsystem.h" tooltip="WidgetCore2/src/WidgetCore/wsystem.h">
-<persistable path="/WidgetCore2/src/WidgetCore/wsystem.h"/>
 </file>
 </mruList>
 </workbench>

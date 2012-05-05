@@ -1,25 +1,9 @@
-
-----------------------------------------------------------------------------
---                            Design Analysis                             --
-----------------------------------------------------------------------------
-Analyze pcore spi_slave ...
-
-
-----------------------------------------------------------------------------
---                            Design Analysis                             --
-----------------------------------------------------------------------------
-Analyze pcore spi_slave ...
-
-
-----------------------------------------------------------------------------
---                            File Generation                             --
-----------------------------------------------------------------------------
-Creating HDL source directory ...
-Generating top peripheral VHDL template ...
-Generating stub user logic VHDL template ...
-HDL templates successfully generated ...
-Creating data directory ...
-Generating XPS inteface files ...
+Parsing XST project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit spi_slave is vhdl ...
+INFO:EDK:3391 - Create temporary xst project file:
+   C:\workspace_gp_lab\GP_LAB_EDK\pcores/spi_slave.prj
 Compiling vhdl file
 "C:/Xilinx/13.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
 l/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
@@ -30,16 +14,6 @@ Compiling vhdl file
 l/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
 Package <family_support> compiled.
 Package body <family_support> compiled.
-Compiling vhdl file
-"C:/Xilinx/13.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
-l/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
-Entity <or_muxcy> compiled.
-Entity <or_muxcy> (Architecture <implementation>) compiled.
-Compiling vhdl file
-"C:/Xilinx/13.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
-l/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
-Entity <or_gate128> compiled.
-Entity <or_gate128> (Architecture <imp>) compiled.
 Compiling vhdl file
 "C:/Xilinx/13.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
 l/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
@@ -71,13 +45,13 @@ hdl/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
 Entity <axi_lite_ipif> compiled.
 Entity <axi_lite_ipif> (Architecture <imp>) compiled.
 Compiling vhdl file
-"C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/data/../hdl/vhdl/user_l
-ogic.vhd" in Library spi_slave_v1_00_a.
+"C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/hdl/vhdl/user_logic.vhd
+" in Library spi_slave_v1_00_a.
 Entity <user_logic> compiled.
 Entity <user_logic> (Architecture <IMP>) compiled.
 Compiling vhdl file
-"C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/data/../hdl/vhdl/spi_sl
-ave.vhd" in Library spi_slave_v1_00_a.
+"C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/hdl/vhdl/spi_slave.vhd"
+in Library spi_slave_v1_00_a.
 Entity <spi_slave> compiled.
 Entity <spi_slave> (Architecture <IMP>) compiled.
 
@@ -87,70 +61,43 @@ Entity name = spi_slave
 INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
 INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
 INFO:EDK:1486 - HDL set to value : VHDL
-WARNING:EDK:3588 - Unable to delete temporary XST project file
-   C:\workspace_gp_lab\GP_LAB_EDK\pcores\spi_slave_v1_00_a\data\_spi_slave_xst.p
-   rj : 13
-XPS interface files successfully generated ...
-Creating development directory ...
-Generating command option file ...
-Generating readme file ...
-Development misc files successfully generated ...
-Creating projnav directory ...
-Generating ProjNav support files ...
-ProjNav support files successfully generated ...
-Creating synthesis directory ...
-Generating XST synthesis support files ...
-XST synthesis support files successfully generated ...
-No BFM simulation files will be generated at this time ...
-No software driver files will be generated at this time ...
+WARNING:EDK:3590 - Unable to delete temporary project file
+   C:\workspace_gp_lab\GP_LAB_EDK\pcores\spi_slave.prj : 13
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal SPI_CLK
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal SPI_CLK
+INFO:EDK:1631 - Infer bus clock [S_AXI_ACLK] for bus interface S_AXI ...
+Copying file user_logic.vhd to
+C:\workspace_gp_lab\GP_LAB_EDK\pcores/spi_slave_v1_00_a/hdl/vhdl/ ...
+Copying file spi_slave.vhd to
+C:\workspace_gp_lab\GP_LAB_EDK\pcores/spi_slave_v1_00_a/hdl/vhdl/ ...
 
-----------------------------------------------------------------------------
---                              Final Report                              --
-----------------------------------------------------------------------------
 Thank you for using Create and Import Peripheral Wizard! Please find your
-peripheral hardware templates under
-C:\workspace_gp_lab\GP_LAB_EDK/pcores/spi_slave_v1_00_a.
+imported peripheral under
+C:\workspace_gp_lab\GP_LAB_EDK\pcores\spi_slave_v1_00_a.
 
-Peripheral Summary:
+Summary:
 
-  top name       : spi_slave
-  version        : 1.00.a
-  type           : AXI4LITE slave
-  features       : slave attachment
-                   user s/w registers
+  Logical library     : spi_slave_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : S_AXI4LITE 
 
-Address Block Summary:
+The following sub-directories will be created:
 
-  user logic slv : C_BASEADDR + 0x00000000
-                 : C_BASEADDR + 0x000000FF
-
-File Summary
-
-  - HDL source -
-  C:\workspace_gp_lab\GP_LAB_EDK/pcores/spi_slave_v1_00_a/hdl
-  top entity     : vhdl/spi_slave.vhd
-  user logic     : vhdl/user_logic.vhd
-
-  - XPS interface -
-  C:\workspace_gp_lab\GP_LAB_EDK/pcores/spi_slave_v1_00_a/data
-  mpd            : spi_slave_v2_1_0.mpd
-  pao            : spi_slave_v2_1_0.pao
-
-  - ISE project -
-  C:\workspace_gp_lab\GP_LAB_EDK/pcores/spi_slave_v1_00_a/devl/projnav
-  ise project    : spi_slave.xise
-  tcl script     : spi_slave.tcl
+  - spi_slave_v1_00_a\data
+  - spi_slave_v1_00_a\hdl
+  - spi_slave_v1_00_a\hdl\verilog
+  - spi_slave_v1_00_a\hdl\vhdl
 
 
-  - XST synthesis -
-  C:\workspace_gp_lab\GP_LAB_EDK/pcores/spi_slave_v1_00_a/devl/synthesis
-  xst script     : spi_slave_xst.scr
-  xst project    : spi_slave_xst.prj
+The following HDL source files will be copied into the
+spi_slave_v1_00_a\hdl\vhdl directory:
 
-  - Misc file -
-  C:\workspace_gp_lab\GP_LAB_EDK/pcores/spi_slave_v1_00_a/devl
-  help           : README.txt
-  option         : ipwiz.opt
-  log            : ipwiz.log
+  - user_logic.vhd
+  - spi_slave.vhd
+
+The following files will be created under the spi_slave_v1_00_a\data directory:
+
+  - spi_slave_v2_1_0.mpd
+  - spi_slave_v2_1_0.pao
 
 

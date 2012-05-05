@@ -224,7 +224,7 @@ begin
       C_BASEADDR => X"00000000",
       C_HIGHADDR => X"00007fff",
       C_FAMILY => "spartan6",
-      C_MASK => X"40000000",
+      C_MASK => X"00400000",
       C_LMB_AWIDTH => 32,
       C_LMB_DWIDTH => 32,
       C_ECC => 0,

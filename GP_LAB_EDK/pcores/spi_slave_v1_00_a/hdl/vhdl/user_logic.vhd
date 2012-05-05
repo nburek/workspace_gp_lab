@@ -133,7 +133,20 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
-
+  signal incoming_byte	:	std_logic_vector(7 downto 0);
+  signal outgoing_byte	:	std_logic_vector(7 downto 0);
+  type buff is array (127 downto 0) of STD_LOGIC_VECTOR(7 downto 0);
+  signal incoming_buff : buff := (others => "00000000");
+  signal outgoing_buff : buff := (others => "00000000");
+  signal incoming_buff_front : STD_LOGIC_VECTOR(6 downto 0) := "0000000";
+  signal incoming_buff_back : STD_LOGIC_VECTOR(6 downto 0) := "0000000";
+  signal outgoing_buff_front : STD_LOGIC_VECTOR(6 downto 0) := "0000000";
+  signal outgoing_buff_back : STD_LOGIC_VECTOR(6 downto 0) := "0000000";
+  signal is_incoming_empty : STD_LOGIC;
+  signal is_outgoing_full : STD_LOGIC;
+  
+  signal miso : STD_LOGIC := '0';
+  
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -150,7 +163,14 @@ architecture IMP of user_logic is
 begin
 
   --USER logic implementation added here
-
+  is_incoming_empty <= '1' WHEN (incoming_buff_front = incoming_buff_back) ELSE '0';
+  is_outgoing_full <= '1' WHEN (
+											(outgoing_buff_front = "0000000" and outgoing_buff_back = "1111111") 
+											or (outgoing_buff_back = (outgoing_buff_front-1))
+										 ) 
+							     ELSE '0';
+  --SPI_MISO <= miso;
+  SPI_MISO <= outgoing_byte(0);
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
   -- 
@@ -186,30 +206,15 @@ begin
         slv_reg3 <= (others => '0');
       else
         case slv_reg_write_sel is
-          when "1000" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg0(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
-              end if;
-            end loop;
+          when "1000" => -- empty the incoming buffer
+            --incoming_buff_back <= incoming_buff_front;
           when "0100" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg1(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
-              end if;
-            end loop;
+            
           when "0010" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg2(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
-              end if;
-            end loop;
-          when "0001" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg3(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
-              end if;
-            end loop;
+            
+          when "0001" => -- insert into out buffer
+            outgoing_buff(conv_integer(outgoing_buff_back)) <= Bus2IP_Data(7 downto 0);
+				outgoing_buff_back <= outgoing_buff_back + 1;
           when others => null;
         end case;
       end if;
@@ -222,11 +227,17 @@ begin
   begin
 
     case slv_reg_read_sel is
-      when "1000" => slv_ip2bus_data <= slv_reg0;
-      when "0100" => slv_ip2bus_data <= slv_reg1;
-      when "0010" => slv_ip2bus_data <= slv_reg2;
-      when "0001" => slv_ip2bus_data <= slv_reg3;
-      when others => slv_ip2bus_data <= (others => '0');
+      when "1000" =>  -- see if incoming is empty, slv_reg0
+			slv_ip2bus_data <= (C_SLV_DWIDTH-1 downto 1 => '0') & is_incoming_empty;
+      when "0100" =>  --read the top of the incoming buffer, slv_reg1
+			slv_ip2bus_data <= (C_SLV_DWIDTH-1 downto 8 => '0') & incoming_buff(conv_integer(incoming_buff_front)); 
+			incoming_buff_front <= incoming_buff_front + 1;
+      when "0010" => -- see if outgoing buff is full, slv_reg2
+			slv_ip2bus_data <= (C_SLV_DWIDTH-1 downto 1 => '0') & is_outgoing_full;
+      when "0001" => --slv_reg3
+			slv_ip2bus_data <= (others => '0'); 
+      when others => 
+			slv_ip2bus_data <= (others => '0');
     end case;
 
   end process SLAVE_REG_READ_PROC;
@@ -240,5 +251,29 @@ begin
   IP2Bus_WrAck <= slv_write_ack;
   IP2Bus_RdAck <= slv_read_ack;
   IP2Bus_Error <= '0';
+  
+  
+  process (SPI_SS, SPI_CLK)
+  begin
+		IF (falling_edge(SPI_SS)) THEN -- starting a new read/write
+			incoming_byte <= (others => '0');
+			outgoing_byte <= outgoing_buff(conv_integer(outgoing_buff_front))(7 downto 0);
+			--miso <= outgoing_buff(conv_integer(outgoing_buff_front))(0);
+			outgoing_buff_front <= outgoing_buff_front + 1;
+		END IF;
+		IF (rising_edge(SPI_SS)) THEN -- ending a read/write
+			incoming_buff(conv_integer(incoming_buff_back)) <= incoming_byte;
+			incoming_buff_back <= incoming_buff_back + 1;
+		END IF;
+		IF (rising_edge(SPI_CLK)) THEN --rising edge of the SPI clock
+			incoming_byte <= SPI_MOSI & incoming_byte(7 downto 1);
+		END IF;
+		IF (falling_edge(SPI_CLK)) THEN --falling edge of the SPI clock, time to change output
+			--miso <= outgoing_byte(0);
+			outgoing_byte <= '0' & outgoing_byte(7 downto 1);
+		END IF;
+		
+  end process;
+  
 
 end IMP;

@@ -34,7 +34,7 @@
 								<option id="xilinx.gnu.mb.compiler.inferred.usepcmp.1817770971" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.mul.117840634" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1370405012" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/include"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/include"/>
 								</option>
 								<inputType id="xilinx.gnu.compiler.input.1969821083" name="C source files" superClass="xilinx.gnu.compiler.input"/>
 							</tool>
@@ -47,7 +47,7 @@
 								<option id="xilinx.gnu.mb.compiler.inferred.usepcmp.646827601" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.mul.150892551" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1025835703" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/include"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/include"/>
 								</option>
 							</tool>
 							<tool id="xilinx.gnu.mb.toolchain.archiver.693438257" name="MicroBlaze archiver" superClass="xilinx.gnu.mb.toolchain.archiver"/>
@@ -58,7 +58,7 @@
 								<option id="xilinx.gnu.mb.linker.inferred.usepcmp.300634327" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.mul.1098418755" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" value="xilinx.gnu.mb.linker.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.1813906667" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/lib"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/lib"/>
 								</option>
 								<option id="xilinx.gnu.linker.inferred.swplatform.flags.403637626" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
@@ -77,7 +77,7 @@
 								<option id="xilinx.gnu.mb.linker.inferred.usepcmp.2030175151" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.mul.407097355" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" value="xilinx.gnu.mb.linker.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.1259619225" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/lib"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/lib"/>
 								</option>
 								<option id="xilinx.gnu.linker.inferred.swplatform.flags.1440751604" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
@@ -743,7 +743,7 @@
 								<option id="xilinx.gnu.mb.compiler.inferred.usepcmp.1577793324" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.mul.659266112" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1695278433" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/include"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/include"/>
 								</option>
 								<inputType id="xilinx.gnu.compiler.input.1326351787" name="C source files" superClass="xilinx.gnu.compiler.input"/>
 							</tool>
@@ -756,7 +756,7 @@
 								<option id="xilinx.gnu.mb.compiler.inferred.usepcmp.536311953" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.mul.1711677500" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1534067469" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/include"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/include"/>
 								</option>
 							</tool>
 							<tool id="xilinx.gnu.mb.toolchain.archiver.1053782572" name="MicroBlaze archiver" superClass="xilinx.gnu.mb.toolchain.archiver"/>
@@ -767,7 +767,7 @@
 								<option id="xilinx.gnu.mb.linker.inferred.usepcmp.461596645" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.mul.1426061431" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" value="xilinx.gnu.mb.linker.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.93263582" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/lib"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/lib"/>
 								</option>
 								<option id="xilinx.gnu.linker.inferred.swplatform.flags.1055145927" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
@@ -786,7 +786,7 @@
 								<option id="xilinx.gnu.mb.linker.inferred.usepcmp.351974952" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" value="true" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.mul.2114249512" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" value="xilinx.gnu.mb.linker.inferred.mul.32bit" valueType="enumerated"/>
 								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.581782923" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
-									<listOptionValue builtIn="false" value="../../WidgetCore2_bsp/microblaze_0/lib"/>
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/lib"/>
 								</option>
 								<option id="xilinx.gnu.linker.inferred.swplatform.flags.870982910" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>

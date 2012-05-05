@@ -1,10 +1,16 @@
 ##############################################################################
-## Filename:          C:/workspace_gp_lab/GP_LAB_EDK/pcores/spi_slave_v1_00_a/data/spi_slave_v2_1_0.pao
+## Filename:          C:\workspace_gp_lab\GP_LAB_EDK\pcores/spi_slave_v1_00_a/data/spi_slave_v2_1_0.pao
 ## Description:       Peripheral Analysis Order
-## Date:              Fri Apr 27 13:43:50 2012 (by Create and Import Peripheral Wizard)
+## Date:              Mon Apr 30 13:44:25 2012 (by Create and Import Peripheral Wizard)
 ##############################################################################
 
-lib proc_common_v3_00_a  all 
-lib axi_lite_ipif_v1_01_a  all 
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib axi_lite_ipif_v1_01_a address_decoder vhdl
+lib axi_lite_ipif_v1_01_a slave_attachment vhdl
+lib axi_lite_ipif_v1_01_a axi_lite_ipif vhdl
 lib spi_slave_v1_00_a user_logic vhdl
 lib spi_slave_v1_00_a spi_slave vhdl

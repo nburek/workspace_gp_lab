@@ -1,4 +1,4 @@
-Release 13.4 - xst O.87xd (nt)
+Release 13.4 - xst O.87xd (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> 
 TABLE OF CONTENTS
@@ -119,7 +119,7 @@ Synthesizing Unit <lmb_bram_if_cntlr>.
         C_FAMILY = "spartan6"
         C_HIGHADDR = "00000000000000000111111111111111"
         C_BASEADDR = "00000000000000000000000000000000"
-        C_MASK = "01000000000000000000000000000000"
+        C_MASK = "00000000010000000000000000000000"
         C_LMB_AWIDTH = 32
         C_LMB_DWIDTH = 32
         C_ECC = 0
@@ -191,9 +191,9 @@ Synthesizing Unit <pselect_mask>.
     Related source file is "c:/xilinx/13.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/pselect_mask.vhd".
         C_AW = 32
         C_BAR = "00000000000000000000000000000000"
-        C_MASK = "01000000000000000000000000000000"
-WARNING:Xst:647 - Input <A<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <A<2:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+        C_MASK = "00000000010000000000000000000000"
+WARNING:Xst:647 - Input <A<0:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <A<10:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <pselect_mask> synthesized.
@@ -342,15 +342,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              0.887ns (Levels of Logic = 1)
-  Source:            LMB_ABus<1> (PAD)
+  Source:            LMB_ABus<9> (PAD)
   Destination:       microblaze_0_d_bram_ctrl/Sl_Ready_i (FF)
   Destination Clock: BRAM_Clk_A rising
 
-  Data Path: LMB_ABus<1> to microblaze_0_d_bram_ctrl/Sl_Ready_i
+  Data Path: LMB_ABus<9> to microblaze_0_d_bram_ctrl/Sl_Ready_i
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     INV:I->O              1   0.206   0.579  microblaze_0_d_bram_ctrl/pselect_mask_lmb/CS<1>1_INV_0 (microblaze_0_d_bram_ctrl/lmb_select)
+     INV:I->O              1   0.206   0.579  microblaze_0_d_bram_ctrl/pselect_mask_lmb/CS<9>1_INV_0 (microblaze_0_d_bram_ctrl/lmb_select)
      FDR:D                     0.102          microblaze_0_d_bram_ctrl/Sl_Ready_i
     ----------------------------------------
     Total                      0.887ns (0.308ns logic, 0.579ns route)
@@ -400,12 +400,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.28 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.81 secs
  
 --> 
 
-Total memory usage is 194624 kilobytes
+Total memory usage is 267836 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   38 (   0 filtered)

@@ -1,54 +1,22 @@
 //! **************************************************************************
-// Written by: Map O.87xd on Sun Apr 01 12:23:54 2012
+// Written by: Map O.87xd on Mon Apr 30 21:51:40 2012
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "GCLK" LOCATE = SITE "V10" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_AN_pin<0>" LOCATE = SITE "N16" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_AN_pin<1>" LOCATE = SITE "N15" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_AN_pin<2>" LOCATE = SITE "P18" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_AN_pin<3>" LOCATE = SITE "P17" LEVEL 1;
 COMP "vga_0_Hsync_pin" LOCATE = SITE "N6" LEVEL 1;
 COMP "RESET" LOCATE = SITE "B8" LEVEL 1;
 COMP "vga_0_B_pin<0>" LOCATE = SITE "R7" LEVEL 1;
 COMP "vga_0_B_pin<1>" LOCATE = SITE "T7" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<0>" LOCATE = SITE "M13" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<1>" LOCATE = SITE "T17" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<2>" LOCATE = SITE "T18" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<3>" LOCATE = SITE "U17" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<4>" LOCATE = SITE "U18" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<5>" LOCATE = SITE "M14" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<6>" LOCATE = SITE "N14" LEVEL 1;
-COMP "Digilent_SevSeg_Disp_SEG_pin<7>" LOCATE = SITE "L14" LEVEL 1;
 COMP "vga_0_G_pin<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "vga_0_G_pin<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "vga_0_G_pin<2>" LOCATE = SITE "V6" LEVEL 1;
-COMP "RS232_Uart_1_sout" LOCATE = SITE "N18" LEVEL 1;
+COMP "RS232_Uart_1_sout" LOCATE = SITE "V12" LEVEL 1;
 COMP "vga_0_R_pin<0>" LOCATE = SITE "U7" LEVEL 1;
 COMP "vga_0_R_pin<1>" LOCATE = SITE "V7" LEVEL 1;
 COMP "vga_0_R_pin<2>" LOCATE = SITE "N7" LEVEL 1;
 COMP "vga_0_Vsync_pin" LOCATE = SITE "P7" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<0>" LOCATE = SITE "U16" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<1>" LOCATE = SITE "V16" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<2>" LOCATE = SITE "U15" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<3>" LOCATE = SITE "V15" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<4>" LOCATE = SITE "M11" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<5>" LOCATE = SITE "N11" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<6>" LOCATE = SITE "R11" LEVEL 1;
-COMP "LEDs_8Bits_TRI_O<7>" LOCATE = SITE "T11" LEVEL 1;
-COMP "RS232_Uart_1_sin" LOCATE = SITE "N17" LEVEL 1;
-COMP "Push_Buttons_4Bits_TRI_I<0>" LOCATE = SITE "A8" LEVEL 1;
-COMP "Push_Buttons_4Bits_TRI_I<1>" LOCATE = SITE "C4" LEVEL 1;
-COMP "Push_Buttons_4Bits_TRI_I<2>" LOCATE = SITE "C9" LEVEL 1;
-COMP "Push_Buttons_4Bits_TRI_I<3>" LOCATE = SITE "D9" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<0>" LOCATE = SITE "T10" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<1>" LOCATE = SITE "T9" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<2>" LOCATE = SITE "V9" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<3>" LOCATE = SITE "M8" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<4>" LOCATE = SITE "N8" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<5>" LOCATE = SITE "U8" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<6>" LOCATE = SITE "V8" LEVEL 1;
-COMP "DIP_Switches_8Bits_TRI_I<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "RS232_Uart_1_sin" LOCATE = SITE "T12" LEVEL 1;
 PIN microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28> =
         BEL "microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0"
         PINNAME CLKA;
@@ -394,149 +362,7 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_15_pins<28>"
         PIN
         "microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_15_pins<29>"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_Data_In_3"
         BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/Mshreg_gpio_Data_In_3"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_Data_In_2"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/Mshreg_gpio_Data_In_2"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_Data_In_1"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/Mshreg_gpio_Data_In_1"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_Data_In_0"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/Mshreg_gpio_Data_In_0"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_1"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_0"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_1"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/GPIO_DBus_i_30"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/GPIO_DBus_i_28"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/GPIO_DBus_i_29"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/GPIO_DBus_i_31"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/bus2ip_reset" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/ip2bus_rdack_i_D1" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/ip2bus_wrack_i_D1" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rvalid_i"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bvalid_i"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_OE_3" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_OE_2" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_OE_1" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_OE_0" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/iGPIO_xferAck" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/gpio_core_1/gpio_xferAck_Reg"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2"
-        BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1"
-        BEL "Push_Buttons_4Bits/Push_Buttons_4Bits/ip2bus_data_i_D1_31" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/ip2bus_data_i_D1_30" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/ip2bus_data_i_D1_29" BEL
-        "Push_Buttons_4Bits/Push_Buttons_4Bits/ip2bus_data_i_D1_28" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_7" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_7"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_6"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_6"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_5"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_5"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_4"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_4"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_3"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_3"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_2"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_2"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_1"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_1"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_Data_In_0"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/Mshreg_gpio_Data_In_0"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_0"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_1"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_1"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_24"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_25"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_26"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_27"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_28"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_29"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_30"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/GPIO_DBus_i_31"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/bus2ip_reset" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_rdack_i_D1" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_wrack_i_D1" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rvalid_i"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bvalid_i"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_7" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_6" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_5" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_4" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_3" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_2" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_1" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_OE_0" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/iGPIO_xferAck" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/gpio_core_1/gpio_xferAck_Reg"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_4"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_5"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2"
-        BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1"
-        BEL "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_31" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_30" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_29" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_28" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_27" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_26" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_25" BEL
-        "DIP_Switches_8Bits/DIP_Switches_8Bits/ip2bus_data_i_D1_24" BEL
         "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/DELAY_16_I/INFERRED_GEN.data_15"
         BEL
         "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/DELAY_16_I/Mshreg_INFERRED_GEN.data_15"
@@ -732,17 +558,19 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST" BEL
         "microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I" BEL
         "microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I" BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_3"
-        BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1"
-        BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2"
+        BEL
+        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_2"
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2"
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1"
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1"
+        BEL
+        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1"
+        BEL
+        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/s_axi_rlast_i"
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_0"
         BEL
@@ -756,35 +584,9 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/s_axi_arready_i"
         BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/s_axi_rlast_i"
-        BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i"
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[6].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/busy"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[6].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[6].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[5].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/busy"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[5].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[5].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[4].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/busy"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[4].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[4].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/busy"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_active"
         BEL
         "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[2].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/busy"
         BEL
@@ -868,27 +670,9 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_3"
         BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_4"
-        BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_5"
-        BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_6"
-        BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_7"
-        BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0"
         BEL
         "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1"
-        BEL
-        "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_2"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[6].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d_1"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[5].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d_1"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[4].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d_1"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d_1"
         BEL
         "axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[2].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d_1"
         BEL
@@ -908,14 +692,6 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_pipe_2"
         BEL
-        "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[6].clock_conv_inst/m_axi_reset_out_n_i"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[5].clock_conv_inst/m_axi_reset_out_n_i"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[4].clock_conv_inst/m_axi_reset_out_n_i"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[3].clock_conv_inst/m_axi_reset_out_n_i"
-        BEL
         "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[2].clock_conv_inst/m_axi_reset_out_n_i"
         BEL
         "axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[1].clock_conv_inst/m_axi_reset_out_n_i"
@@ -927,14 +703,6 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "axi4lite_0/axi4lite_0/mi_register_slice_bank/gen_reg_slot[1].register_slice_inst/reset"
         BEL
         "axi4lite_0/axi4lite_0/mi_register_slice_bank/gen_reg_slot[2].register_slice_inst/reset"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_register_slice_bank/gen_reg_slot[3].register_slice_inst/reset"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_register_slice_bank/gen_reg_slot[4].register_slice_inst/reset"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_register_slice_bank/gen_reg_slot[5].register_slice_inst/reset"
-        BEL
-        "axi4lite_0/axi4lite_0/mi_register_slice_bank/gen_reg_slot[6].register_slice_inst/reset"
         BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_3"
         BEL
@@ -1447,30 +1215,6 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_13"
         BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_12"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_11"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_10"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_9"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_8"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_7"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_6"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_5"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_4"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_3"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_2"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_1"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_0"
         BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/mem_byte_selects_1"
         BEL
@@ -2622,54 +2366,6 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_24"
         BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_23"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_22"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_21"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_20"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_19"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_18"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_17"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_16"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_15"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_14"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_13"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_12"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_11"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_10"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_9"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_8"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_7"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_6"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_5"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_4"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_3"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_2"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_1"
-        BEL
-        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Read_Data_0"
-        BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/mem_access_completed"
         BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_AXI.DAXI_Interface_I1/WB_DAXI_Data_Strobe"
@@ -2962,558 +2658,6 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "debug_module/debug_module/Use_AXI_IPIF.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
         BEL
         "debug_module/debug_module/Use_AXI_IPIF.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1"
-        BEL "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_7" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_7" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_6" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_6" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_5" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_5" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_4" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_4" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_3" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_3" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_2" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_2" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_1" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_1" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In_0" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_0" BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_0"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_1"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_1"
-        BEL "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_24" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_25" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_26" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_27" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_28" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_29" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_30" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/GPIO_DBus_i_31" BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
-        BEL "LEDs_8Bits/LEDs_8Bits/bus2ip_reset" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_rdack_i_D1" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_wrack_i_D1" BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rvalid_i"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bvalid_i"
-        BEL "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_7" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_6" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_5" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_4" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_3" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_2" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_1" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_Out_0" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_7" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_6" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_5" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_4" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_3" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_2" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_1" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_OE_0" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/iGPIO_xferAck" BEL
-        "LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_xferAck_Reg" BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_4"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_5"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2"
-        BEL
-        "LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1"
-        BEL "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_31" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_30" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_29" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_28" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_27" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_26" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_25" BEL
-        "LEDs_8Bits/LEDs_8Bits/ip2bus_data_i_D1_24" BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_17_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_16_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_18_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_CE"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rvalid_i"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bvalid_i"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_24"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_25"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_26"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_27"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/CE_div_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_24"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_25"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_26"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_27"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_28"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_29"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_30"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_31"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_24"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_25"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_26"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_27"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_28"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_29"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_30"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/HEX_DATA_REG_31"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_24"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_25"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_26"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_27"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_28"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_29"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_30"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/REFRESH_DIV_REG_31"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_24"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_25"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_26"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_27"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_28"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_29"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_30"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/USER_LOGIC_I/SEGMENT_REG_31"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_4"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_5"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_0"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_1"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3"
-        BEL
-        "Digilent_SevSeg_Disp/Digilent_SevSeg_Disp/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1"
         BEL
         "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMA_D1"
         BEL

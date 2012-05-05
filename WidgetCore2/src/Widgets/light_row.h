@@ -20,7 +20,7 @@ typedef struct lrow_widget{
 	LEDWidget drow[8];	//derived portion
 }LRowWidget;
 
-struct widget new_LRowWidget(u32 xi, u32 yi){
+Widget new_LRowWidget(u32 xi, u32 yi){
 
 	LRowWidget* w = (LRowWidget*) malloc(sizeof(LRowWidget));
 
@@ -28,8 +28,22 @@ struct widget new_LRowWidget(u32 xi, u32 yi){
 			.x = xi,
 			.y = yi,
 			.derive = (const void*)w,
+			.destroy = default_destroy,
 			.runFunction = LRow_runFunction
 	};
+
+	int i;
+	for(i = 0; i < 8; ++i){
+		w->row[i].x = 190 + i*20;
+
+		w->drow[i].radius = 10;
+		w->drow[i].color = RED;
+
+		w->row[i].x = 190 + i*20;
+		w->row[i].y = 35;
+		w->row[i].derive = &(w->drow[i]);
+		w->row[i].runFunction = LED_runFunction;
+	}
 
 	return lrow;
 }
@@ -38,26 +52,11 @@ Packet LRow_runFunction(Widget* base, u8 funcN, Packet* pack){
 
 	LRowWidget* derive = (LRowWidget*)(base->derive);
 
+	Packet op;
+	op.bytes[0] = 0;
+
 	switch(funcN){
 
-		case 1:{
-			int i;
-			Packet p;
-			for(i = 0; i < 8; ++i){
-				p.bytes[0] = pack->bytes[i];
-				derive->row[i].x = 190 + i*20;
-
-				derive->drow[i].radius = 10;
-				derive->drow[i].color = RED;
-
-				derive->row[i].x = 190 + i*20;
-				derive->row[i].y = 35;
-				derive->row[i].derive = &(derive->drow[i]);
-				derive->row[i].runFunction = LED_runFunction;
-				derive->row[i].runFunction(&(derive->row[i]), 1, &p);
-			}
-		}
-		break;
 		case 2:{
 			int i;
 			Packet p;
@@ -68,6 +67,8 @@ Packet LRow_runFunction(Widget* base, u8 funcN, Packet* pack){
 		}
 		break;
 	}
+
+	return op;
 
 }
 

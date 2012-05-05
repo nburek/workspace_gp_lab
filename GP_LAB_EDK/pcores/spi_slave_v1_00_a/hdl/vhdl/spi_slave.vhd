@@ -304,10 +304,10 @@ begin
     port map
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
-      SPI_SS		:	in		std_logic;
-		SPI_MISO		:	out	std_logic;
-		SPI_MOSI		:	in		std_logic;
-		SPI_CLK		:	in		std_logic;
+      SPI_SS                       => SPI_SS,
+		SPI_MISO                     => SPI_MISO,
+		SPI_MOSI                     => SPI_MOSI,
+		SPI_CLK                      => SPI_CLK,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

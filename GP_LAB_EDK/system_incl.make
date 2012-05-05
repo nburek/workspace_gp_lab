@@ -73,10 +73,6 @@ implementation/debug_module_wrapper.ngc \
 implementation/clock_generator_0_wrapper.ngc \
 implementation/axi4lite_0_wrapper.ngc \
 implementation/rs232_uart_1_wrapper.ngc \
-implementation/push_buttons_4bits_wrapper.ngc \
-implementation/leds_8bits_wrapper.ngc \
-implementation/digilent_sevseg_disp_wrapper.ngc \
-implementation/dip_switches_8bits_wrapper.ngc \
 implementation/vga_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc

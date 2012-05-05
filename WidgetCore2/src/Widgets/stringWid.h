@@ -20,7 +20,7 @@ typedef struct str_widget {
 	u8 color;
 } STRWidget;
 
-struct widget new_STRWidget(u32 x_i, u32 y_i, char chars[], u8 length, u8 color_i){
+Widget new_STRWidget(u32 x_i, u32 y_i, char chars[], u8 length, u8 color_i){
 
 	STRWidget* w = (STRWidget*) malloc(sizeof(STRWidget));
 	w->size  = length;
@@ -35,8 +35,17 @@ struct widget new_STRWidget(u32 x_i, u32 y_i, char chars[], u8 length, u8 color_
 			.x = x_i,
 			.y = y_i,
 			.derive = (const void*)w,
+			.destroy = default_destroy,
 			.runFunction = STR_runFunction
 	};
+
+	for(i = 0; i < w->size; ++i){
+		if(w->chars[i] >= 48 && w->chars[i] <= 57){
+			drawDigit(stringW.x+(i*8), stringW.y, w->chars[i] - 48, w->color);
+		}else{
+			drawLetter(stringW.x+i*8, stringW.y, w->chars[i], w->color);
+		}
+	}
 
 	return stringW;
 }
@@ -44,22 +53,24 @@ struct widget new_STRWidget(u32 x_i, u32 y_i, char chars[], u8 length, u8 color_
 
 Packet STR_runFunction(Widget* base, u8 funcN, Packet* pack){
 
-	STRWidget* derive = (STRWidget*)(base->derive);
+	//STRWidget* derive = (STRWidget*)(base->derive);
+
+	Packet op;
+	op.bytes[0] = 0;
 
 	switch(funcN){
 
 		case 1:{
-			int i;
-			for(i = 0; i < derive->size; ++i){
-				if(derive->chars[i] >= 48 && derive->chars[i] <= 57){
-					drawDigit(base->x+(i*8), base->y, derive->chars[i] - 48, derive->color);
-				}else{
-					drawLetter(base->x+i*8, base->y, derive->chars[i], derive->color);
-				}
-			}
+
+			break;
 		}
-		break;
+		case 2:{
+			break;
+		}
+
 	}
+
+	return op;
 }
 
 

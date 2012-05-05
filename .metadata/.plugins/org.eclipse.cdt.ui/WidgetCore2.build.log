@@ -2,4 +2,37 @@
 **** Build of configuration Debug for project WidgetCore2 ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+In file included from ../src/main.c:14:
+../src/Widgets/graph.h: In function 'Graph_runFunction':
+../src/Widgets/graph.h:98: warning: unused variable 'derive'
+../src/main.c: In function 'main':
+../src/main.c:25: warning: unused variable 'p'
+Finished building: ../src/main.c
+' '
+Building target: WidgetCore2.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"WidgetCore2.elf"  ./src/main.o  ./src/WidgetCore/wsystem.o  ./src/Utilities/miniMath.o  ./src/GraphicsEngine/Graphics.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: WidgetCore2.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size WidgetCore2.elf  |tee "WidgetCore2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21390	   2704	   4202	  28296	   6e88	WidgetCore2.elf
+Finished building: WidgetCore2.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck WidgetCore2.elf -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe microblaze_0  |tee "WidgetCore2.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.4 Build EDK_O.87xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../GP_LAB_EDK_hw_platform/system.xml -pe
+microblaze_0 WidgetCore2.elf 
+
+ELF file	: WidgetCore2.elf
+elfcheck passed.
+Finished building: WidgetCore2.elf.elfcheck
+' '

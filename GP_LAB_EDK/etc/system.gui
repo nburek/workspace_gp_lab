@@ -15,12 +15,10 @@
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="129,510,227" VERSION="0"/>
     <STATUS>
-      <SELECTIONS>
-        <VARIABLE ID="vga_0"/>
-      </SELECTIONS>
+      <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
-      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="15"/>
+      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="11"/>
       <VARIABLE ID="microblaze_0_ilmb" ROW_INDEX="2"/>
       <VARIABLE ID="microblaze_0_i_bram_ctrl" ROW_INDEX="6"/>
       <VARIABLE ID="microblaze_0_dlmb" ROW_INDEX="1"/>
@@ -28,14 +26,10 @@
       <VARIABLE ID="microblaze_0_bram_block" ROW_INDEX="4"/>
       <VARIABLE ID="microblaze_0" ROW_INDEX="3"/>
       <VARIABLE ID="debug_module" ROW_INDEX="7"/>
-      <VARIABLE ID="clock_generator_0" ROW_INDEX="14"/>
+      <VARIABLE ID="clock_generator_0" ROW_INDEX="10"/>
       <VARIABLE ID="axi4lite_0" ROW_INDEX="0"/>
-      <VARIABLE ID="RS232_Uart_1" ROW_INDEX="11"/>
-      <VARIABLE ID="Push_Buttons_4Bits" ROW_INDEX="10"/>
-      <VARIABLE ID="LEDs_8Bits" ROW_INDEX="9"/>
-      <VARIABLE ID="Digilent_SevSeg_Disp" ROW_INDEX="12"/>
-      <VARIABLE ID="DIP_Switches_8Bits" ROW_INDEX="8"/>
-      <VARIABLE ID="vga_0" ROW_INDEX="13"/>
+      <VARIABLE ID="RS232_Uart_1" ROW_INDEX="8"/>
+      <VARIABLE ID="vga_0" ROW_INDEX="9"/>
     </SEQUENCES>
   </SET>
 
@@ -81,9 +75,9 @@
   </SET>
 
   <SET CLASS="PROJECT" DISPLAYMODE="TREE" VIEW_ID="PORT">
-    <HEADERS HSCROLL="0" VSCROLL="298">
+    <HEADERS HSCROLL="0" VSCROLL="324">
       <VARIABLE COL_INDEX="0" COL_WIDTH="167" IS_VISIBLE="TRUE" VIEWDISP="Name" VIEWTYPE="HEADER"/>
-      <VARIABLE COL_INDEX="1" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="Connected Port" VIEWTYPE="HEADER"/>
+      <VARIABLE COL_INDEX="1" COL_WIDTH="206" IS_VISIBLE="TRUE" VIEWDISP="Connected Port" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" IS_VISIBLE="FALSE" VIEWDISP="Net" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="3" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="Direction" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="4" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="Range" VIEWTYPE="HEADER"/>
@@ -97,14 +91,16 @@
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="62,630,200" VERSION="0"/>
     <SET ID="ExternalPorts" IS_EXPANDED="TRUE"/>
-    <SET ID="Digilent_SevSeg_Disp" IS_EXPANDED="TRUE"/>
     <SET ID="vga_0" IS_EXPANDED="TRUE"/>
+    <SET ID="axi_spi_0" IS_EXPANDED="TRUE">
+      <SET ID="spi_0" IS_EXPANDED="TRUE"/>
+    </SET>
     <STATUS>
       <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
       <VARIABLE ID="ExternalPorts" IS_EXPANDED="TRUE" ROW_INDEX="0"/>
-      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="16"/>
+      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="12"/>
       <VARIABLE ID="microblaze_0_ilmb" ROW_INDEX="3"/>
       <VARIABLE ID="microblaze_0_i_bram_ctrl" ROW_INDEX="7"/>
       <VARIABLE ID="microblaze_0_dlmb" ROW_INDEX="2"/>
@@ -112,14 +108,10 @@
       <VARIABLE ID="microblaze_0_bram_block" ROW_INDEX="5"/>
       <VARIABLE ID="microblaze_0" ROW_INDEX="4"/>
       <VARIABLE ID="debug_module" ROW_INDEX="8"/>
-      <VARIABLE ID="clock_generator_0" ROW_INDEX="15"/>
+      <VARIABLE ID="clock_generator_0" ROW_INDEX="11"/>
       <VARIABLE ID="axi4lite_0" ROW_INDEX="1"/>
-      <VARIABLE ID="RS232_Uart_1" ROW_INDEX="12"/>
-      <VARIABLE ID="Push_Buttons_4Bits" ROW_INDEX="11"/>
-      <VARIABLE ID="LEDs_8Bits" ROW_INDEX="10"/>
-      <VARIABLE ID="Digilent_SevSeg_Disp" IS_EXPANDED="TRUE" ROW_INDEX="13"/>
-      <VARIABLE ID="DIP_Switches_8Bits" ROW_INDEX="9"/>
-      <VARIABLE ID="vga_0" IS_EXPANDED="TRUE" ROW_INDEX="14"/>
+      <VARIABLE ID="RS232_Uart_1" ROW_INDEX="9"/>
+      <VARIABLE ID="vga_0" IS_EXPANDED="TRUE" ROW_INDEX="10"/>
     </SEQUENCES>
   </SET>
 

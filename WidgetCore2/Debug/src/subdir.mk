@@ -20,7 +20,7 @@ C_DEPS += \
 src/%.o: ../src/%.c
 	@echo Building file: $<
 	@echo Invoking: MicroBlaze gcc compiler
-	mb-gcc -Wall -Os -c -fmessage-length=0 -I../../WidgetCore2_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	mb-gcc -Wall -Os -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo Finished building: $<
 	@echo ' '
 

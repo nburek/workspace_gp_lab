@@ -17,48 +17,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 3
-
-/* Definitions for peripheral DIP_SWITCHES_8BITS */
-#define XPAR_DIP_SWITCHES_8BITS_BASEADDR 0x40040000
-#define XPAR_DIP_SWITCHES_8BITS_HIGHADDR 0x4004FFFF
-#define XPAR_DIP_SWITCHES_8BITS_DEVICE_ID 0
-#define XPAR_DIP_SWITCHES_8BITS_INTERRUPT_PRESENT 0
-#define XPAR_DIP_SWITCHES_8BITS_IS_DUAL 0
-
-
-/* Definitions for peripheral LEDS_8BITS */
-#define XPAR_LEDS_8BITS_BASEADDR 0x40020000
-#define XPAR_LEDS_8BITS_HIGHADDR 0x4002FFFF
-#define XPAR_LEDS_8BITS_DEVICE_ID 1
-#define XPAR_LEDS_8BITS_INTERRUPT_PRESENT 0
-#define XPAR_LEDS_8BITS_IS_DUAL 0
-
-
-/* Definitions for peripheral PUSH_BUTTONS_4BITS */
-#define XPAR_PUSH_BUTTONS_4BITS_BASEADDR 0x40000000
-#define XPAR_PUSH_BUTTONS_4BITS_HIGHADDR 0x4000FFFF
-#define XPAR_PUSH_BUTTONS_4BITS_DEVICE_ID 2
-#define XPAR_PUSH_BUTTONS_4BITS_INTERRUPT_PRESENT 0
-#define XPAR_PUSH_BUTTONS_4BITS_IS_DUAL 0
-
-
-/******************************************************************/
-
-
-/* Definitions for peripheral DIGILENT_SEVSEG_DISP */
-#define XPAR_DIGILENT_SEVSEG_DISP_BASEADDR 0x7D600000
-#define XPAR_DIGILENT_SEVSEG_DISP_HIGHADDR 0x7D60FFFF
-
-
-/* Definitions for peripheral VGA_0 */
-#define XPAR_VGA_0_BASEADDR 0x7C600000
-#define XPAR_VGA_0_HIGHADDR 0x7C60FFFF
-
-
-/******************************************************************/
-
 /* Definitions for driver UARTLITE */
 #define XPAR_XUARTLITE_NUM_INSTANCES 2
 
@@ -173,6 +131,14 @@
 #define XPAR_BRAM_1_WRITE_ACCESS 2
 #define XPAR_BRAM_1_BASEADDR 0x00000000
 #define XPAR_BRAM_1_HIGHADDR 0x00007FFF
+
+
+/******************************************************************/
+
+
+/* Definitions for peripheral VGA_0 */
+#define XPAR_VGA_0_BASEADDR 0x7C600000
+#define XPAR_VGA_0_HIGHADDR 0x7C60FFFF
 
 
 /******************************************************************/

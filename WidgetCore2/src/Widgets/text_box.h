@@ -36,6 +36,7 @@ struct widget new_TBWidget(u32 x_i, u32 y_i, char chars[], u8 length, u8 color_i
 			.x = x_i,
 			.y = y_i,
 			.derive = (const void*)w,
+			.destroy = default_destroy,
 			.runFunction = STR_runFunction
 	};
 

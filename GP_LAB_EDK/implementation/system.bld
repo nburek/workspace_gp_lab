@@ -1,18 +1,12 @@
-Release 13.4 ngdbuild O.87xd (nt)
+Release 13.4 ngdbuild O.87xd (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -p
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
 xc6slx16csg324-3 -nt timestamp -bm system.bmm
 C:/workspace_gp_lab/GP_LAB_EDK/implementation/system.ngc -uc system.ucf
 system.ngd
 
 Reading NGO file "C:/workspace_gp_lab/GP_LAB_EDK/implementation/system.ngc" ...
-Loading design module
-"C:/workspace_gp_lab/GP_LAB_EDK/implementation/push_buttons_4bits_wrapper.ngc"..
-.
-Loading design module
-"C:/workspace_gp_lab/GP_LAB_EDK/implementation/dip_switches_8bits_wrapper.ngc"..
-.
 Loading design module
 "C:/workspace_gp_lab/GP_LAB_EDK/implementation/rs232_uart_1_wrapper.ngc"...
 Loading design module
@@ -37,11 +31,6 @@ Loading design module
 ngc"...
 Loading design module
 "C:/workspace_gp_lab/GP_LAB_EDK/implementation/debug_module_wrapper.ngc"...
-Loading design module
-"C:/workspace_gp_lab/GP_LAB_EDK/implementation/leds_8bits_wrapper.ngc"...
-Loading design module
-"C:/workspace_gp_lab/GP_LAB_EDK/implementation/digilent_sevseg_disp_wrapper.ngc"
-...
 Loading design module
 "C:/workspace_gp_lab/GP_LAB_EDK/implementation/microblaze_0_bram_block_wrapper.n
 gc"...
@@ -111,10 +100,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   5
 
-Total memory usage is 146812 kilobytes
+Total memory usage is 205792 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  52 sec
-Total CPU time to NGDBUILD completion:   52 sec
+Total REAL time to NGDBUILD completion: 1 min  18 sec
+Total CPU time to NGDBUILD completion:   55 sec
 
 Writing NGDBUILD log file "system.bld"...
