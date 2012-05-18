@@ -44,6 +44,9 @@ Widget new_GraphWidget(u32 xi, u32 yi, u16 widthi, u16 heighti){
 
 	w->width = widthi;
 	w->height = heighti;
+	w->pts = 0;
+	w->max_xi = 0;
+	w->max_yi = 0;
 
 	graphBackground(&Graph);
 
@@ -53,44 +56,27 @@ Widget new_GraphWidget(u32 xi, u32 yi, u16 widthi, u16 heighti){
 //private helper function
 void graphBackground(Widget* base){
 
-	//GraphWidget* derive = (GraphWidget*)(base->derive);
+	GraphWidget* derive = (GraphWidget*)(base->derive);
 
-	drawRectangle(100, 30, 350, 160, WHITE, 1);
-	drawLine(100, 30, 100, 160, BLACK);
-	drawLine(100, 160, 350, 160, BLACK);
-	drawDigit(90, 155, 0, BLACK);
+	drawRectangle(base->x, base->y - derive->height, base->x + derive->width, base->y, WHITE, 1);
+	drawLine(base->x, base->y - derive->height, base->x, base->y, BLACK);
+	drawLine(base->x, base->y, base->x + derive->width, base->y, BLACK);
+	drawDigit(base->x - 10, base->y - 5, 0, BLACK);
 }
 void graph_drawLines(Widget* base){
 
 	GraphWidget* derive = (GraphWidget*)(base->derive);
 
-	u16 xg[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-	u16 yg[] = {1, 3, 5, 2, 1, 6, 10, 12, 1, 3, 8, 7, 10,2, 9, 15};
-	u8 pts = 16;
-
-	u8 max_xi= 0;
-	u8 max_yi= 0;
+	u8 xs = derive->width/derive->xg[derive->max_xi];
+	u8 ys = derive->height/derive->yg[derive->max_yi];
 
 	int i;
-	for(i=0; i < pts; ++i){
-		if(xg[i] > xg[max_xi]){
-			max_xi = i;
-		}
-		if(yg[i] > yg[max_yi]){
-			max_yi = i;
-		}
+	for(i=0; i<derive->pts-1; ++i){
+		drawLine(xs*derive->xg[i]+base->x, -ys*derive->yg[i]+base->y, xs*derive->xg[i+1]+base->x, -ys*derive->yg[i+1]+base->y, RED);
 	}
 
-	u8 xs = derive->width/xg[max_xi];
-	u8 ys = derive->height/yg[max_yi];
-
-
-	for(i=0; i<pts-1; ++i){
-		drawLine(xs*xg[i]+base->x, -ys*yg[i]+base->y, xs*xg[i+1]+base->x, -ys*yg[i+1]+base->y, RED);
-	}
-
-	drawNumber(355, 155, xg[max_xi], BLACK);
-	drawNumber(80, 22, yg[max_yi], BLACK);
+	drawNumber(base->x + derive->width + 5, base->y - 5, derive->xg[derive->max_xi], BLACK);
+	drawNumber(base->x - 10, base->y - derive->height - 5, derive->yg[derive->max_yi], BLACK);
 }
 
 Packet Graph_runFunction(Widget* base, u8 funcN, Packet* pack){
@@ -111,14 +97,22 @@ Packet Graph_runFunction(Widget* base, u8 funcN, Packet* pack){
 		}
 		case 2:{
 			graph_drawLines(base);
-			//u16 x = weldU16(byte_codes[], byte_codes[]);
-			//u16 y = weldU16(byte_codes[], byte_codes[]);
-
+			break;
 		}
 		case 3:{
+			u16 x = weldU16(pack->bytes[0], pack->bytes[1]);
+			u16 y = weldU16(pack->bytes[2], pack->bytes[3]);
 
+			derive->xg[derive->pts] = x;
+			derive->yg[derive->pts] = y;
+
+			if(x > derive->xg[derive->max_xi])	derive->max_xi = derive->pts;
+			if(y > derive->yg[derive->max_yi])	derive->max_yi = derive->pts;
+
+			(derive->pts)++;
+			break;
 		}
-		break;
+
 	}
 
 	return op;

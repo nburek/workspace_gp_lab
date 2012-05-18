@@ -5,9 +5,6 @@ make all
 Building file: ../src/main.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -Os -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
-In file included from ../src/main.c:14:
-../src/Widgets/graph.h: In function 'Graph_runFunction':
-../src/Widgets/graph.h:98: warning: unused variable 'derive'
 ../src/main.c: In function 'main':
 ../src/main.c:25: warning: unused variable 'p'
 Finished building: ../src/main.c
@@ -20,7 +17,7 @@ Finished building target: WidgetCore2.elf
 Invoking: MicroBlaze Print Size
 mb-size WidgetCore2.elf  |tee "WidgetCore2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  21390	   2704	   4202	  28296	   6e88	WidgetCore2.elf
+  21262	   2704	   4202	  28168	   6e08	WidgetCore2.elf
 Finished building: WidgetCore2.elf.size
 ' '
 Invoking: Xilinx ELF Check

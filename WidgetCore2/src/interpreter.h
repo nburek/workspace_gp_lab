@@ -30,6 +30,7 @@
 #define PROGRESS_BAR_WIDGET_TYPE	0x02	//Byte code to define current code as a progress bar code
 #define LIGHT_WIDGET_TYPE			0x03	//Byte code to define current code as a light code
 #define LIGHT_WIDGET_ARRAY_TYPE		0x04	//Byte code to define current code as a light array code
+#define GRAPH_TYPE					0x05	//Byte code to define current code as a graph code
 
 #define	MAX_BYTECODE_SIZE			64		//size of the longest byte code that can be received
 
@@ -41,7 +42,7 @@
  */
 
 void interpret();
-void receiveCodes(u8 byte_codes[], u8* length);
+u8 receiveCodes(u8 byte_codes[], u8* length);
 void returnID(u8 data);
 Widget resolveWType(int type_code);
 
@@ -52,7 +53,7 @@ void interpret(){
 	u8 byte_codes[MAX_BYTECODE_SIZE];
 	u8 length = 0;
 
-	receiveCodes(byte_codes, &length);
+	if(!receiveCodes(byte_codes, &length))	return;
 
 	u8 command = byte_codes[0];
 
@@ -124,7 +125,7 @@ void interpret(){
 
 }
 
-void receiveCodes(u8 byte_codes[], u8* length){
+u8 receiveCodes(u8 byte_codes[], u8* length){
 
 	u8 pos = 0;
 	u8 state = 0;
@@ -187,6 +188,7 @@ void receiveCodes(u8 byte_codes[], u8* length){
 
 	} while (pos<=*length);*/
 
+	u8 checksum = 0;
 	do
 	{
 		data = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);
@@ -196,25 +198,35 @@ void receiveCodes(u8 byte_codes[], u8* length){
 				pos = 0;
 				state = 0;
 				*length = 1;
+				checksum = START_SEND_COMMAND;
 				break;
 			}
 			case ESCAPE_CHARACTER://if escape ignore byte, read next byte and process
 				data = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);
+				checksum ^= data;
 			default:{
 				if(state == 0){//state 0: write command type
 					byte_codes[pos++] = data;
+					checksum ^= data;
 					++state;
 				}else if(state == 1){//state 1: write length
 					*length = data;
+					checksum ^= data;
 					++state;
 				}else{//state 2: write data until done
 					byte_codes[pos++] = data;
+					checksum ^= data;
 				}
 				break;
 			}
 
 		}
 	} while (pos<=*length);
+
+	//data = XUartLite_RecvByte(XPAR_UARTLITE_1_BASEADDR);//checksum;
+
+	//return (checksum ^ data) == 0;
+	return 1;
 }
 
 void returnID(u8 data){
@@ -230,6 +242,7 @@ Widget resolveWType(int type_code){
 		case PROGRESS_BAR_WIDGET_TYPE:		return new_PBarWidget(0, 0);
 		case LIGHT_WIDGET_TYPE:				return new_LEDWidget(0, 0, 8, RED);
 		case LIGHT_WIDGET_ARRAY_TYPE:		return new_LEDWidget(0, 0, 8, RED);
+		case GRAPH_TYPE:					return new_GraphWidget(0, 0, 150, 50);
 
 	}
 	Widget w;
